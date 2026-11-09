@@ -1,0 +1,7 @@
+FrictionAnchor
+=======================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.FrictionAnchor
+   :members:
+   :show-inheritance:
+   :undoc-members:

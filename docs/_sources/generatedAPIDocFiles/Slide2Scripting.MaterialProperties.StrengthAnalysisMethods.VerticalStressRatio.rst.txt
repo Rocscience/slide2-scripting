@@ -1,0 +1,7 @@
+VerticalStressRatio
+=====================================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.VerticalStressRatio
+   :members:
+   :show-inheritance:
+   :undoc-members:

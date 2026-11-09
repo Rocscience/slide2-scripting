@@ -1,0 +1,7 @@
+DesignStandardsProjectSettings
+=====================================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.DesignStandardsProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

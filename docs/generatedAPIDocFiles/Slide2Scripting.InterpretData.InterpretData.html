@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>InterpretData &#8212; Slide2 Scripting Reference Manual  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generatedAPIDocFiles/Slide2Scripting.InterpretData.InterpretData';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="export_util" href="Slide2Scripting.InterpretData.export_util.html" />
+    <link rel="prev" title="InterpretData" href="Slide2Scripting.InterpretData.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.DisplayOptions.html">DisplayOptions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html">InterpretDisplayOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.html">ModelerDisplayOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.GroundwaterData.html">GroundwaterData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.GroundwaterData.html">GroundwaterData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Slide2Scripting.InterpretData.html">InterpretData</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">InterpretData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html">export_util</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.InterpretQuery.html">InterpretQuery</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.InterpretQuery.html">InterpretQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.graph_types.html">graph_types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Liquefaction.html">Liquefaction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Liquefaction.CPTData.html">CPTData</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.html">MaterialProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.html">StrengthAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Anisotropic.html">Anisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.BartonBandis.html">BartonBandis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.CniRockMass.html">CniRockMass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.DrainedUndrained.html">DrainedUndrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.GeneralizedHoekBrown.html">GeneralizedHoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.HoekBrown.html">HoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Hyperbolic.html">Hyperbolic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.InfiniteStrength.html">InfiniteStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.ModifiedSnowdenAnisotropic.html">ModifiedSnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.MohrCoulomb.html">MohrCoulomb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.NoStrength.html">NoStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.PowerCurve.html">PowerCurve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Shansep.html">Shansep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.SnowdenAnisotropic.html">SnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Undrained.html">Undrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.VerticalStressRatio.html">VerticalStressRatio</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.ExcessPorePressure.html">ExcessPorePressure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.HydraulicProperties.html">HydraulicProperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialProperty.html">MaterialProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialStrength.html">MaterialStrength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.RapidDrawdown.html">RapidDrawdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UnsaturatedShear.html">UnsaturatedShear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedFunctions.html">UserDefinedFunctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedWaterMethods.html">UserDefinedWaterMethods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.WaterParameters.html">WaterParameters</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.html">ProbabilisticStatistics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.HydraulicProbabilisticStatistics.html">HydraulicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.LoadProbabilisticStatistics.html">LoadProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.MaterialProbabilisticStatistics.html">MaterialProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.PiezoProbabilisticStatistics.html">PiezoProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.ProbabilisticStatistics.html">ProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.RapidDrawdownProbabilisticStatistics.html">RapidDrawdownProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SeismicProbabilisticStatistics.html">SeismicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SupportProbabilisticStatistics.html">SupportProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.TensionCrackProbabilisticStatistics.html">TensionCrackProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.WaterTableProbabilisticStatistics.html">WaterTableProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.common.html">common</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.ProjectSettings.html">ProjectSettings</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.AdvancedProjectSettings.html">AdvancedProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.BackAnalysisTensionMap.html">BackAnalysisTensionMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.CPTProjectSettings.html">CPTProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.DesignStandardsProjectSettings.html">DesignStandardsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GeneralProjectSettings.html">GeneralProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GroundwaterProjectSettings.html">GroundwaterProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MethodsProjectSettings.html">MethodsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MultiDocScenarioModel.html">MultiDocScenarioModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ProjectSettings.html">ProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.RandomNumbersProjectSettings.html">RandomNumbersProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ScenariosProjectSettings.html">ScenariosProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.SeismicProjectSettings.html">SeismicProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.SoilProfileProjectSettings.html">SoilProfileProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.StatisticsProjectSettings.html">StatisticsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.TransientProjectSettings.html">TransientProjectSettings</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.StatisticsData.html">StatisticsData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.StatisticsData.html">StatisticsData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SupportProperties.html">SupportProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.EndAnchored.html">EndAnchored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceApplicationSupport.html">ForceApplicationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceOrientationSupport.html">ForceOrientationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.FrictionAnchor.html">FrictionAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.Geogrid.html">Geogrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.GroutedTieback.html">GroutedTieback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.HelicalAnchor.html">HelicalAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.LaunchedSoilNail.html">LaunchedSoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.MicroPile.html">MicroPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RSPile.html">RSPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RetainingWallEFW.html">RetainingWallEFW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SoilNail.html">SoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SupportProperty.html">SupportProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.UserDefinedSupport.html">UserDefinedSupport</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.html">SurfaceOptions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.AutoSlopeSearchSurfaceOptions.html">AutoSlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.BlockSearchSurfaceOptions.html">BlockSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.CuckooSearchSurfaceOptions.html">CuckooSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.GridSearchSurfaceOptions.html">GridSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.OptimizeSurfaceSettings.html">OptimizeSurfaceSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PSOSurfaceOptions.html">PSOSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PathSearchSurfaceOptions.html">PathSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SimulatedAnnealingSurfaceOptions.html">SimulatedAnnealingSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SlopeSearchSurfaceOptions.html">SlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceFilters.html">SurfaceFilters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceOptions.html">SurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceTypeOptions.html">SurfaceTypeOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Utilities.html">Utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Utilities.ColorPicker.html">ColorPicker</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SeismicLoadSettings.html">SeismicLoadSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2InterpretModel.html">Slide2InterpretModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Interpreter.html">Slide2Interpreter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Model.html">Slide2Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Modeler.html">Slide2Modeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SlopeLimitsSettings.html">SlopeLimitsSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SupportDesigner.html">SupportDesigner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.TensionCrack.html">TensionCrack</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.html" class="nav-link">Slide2Scripting</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.InterpretData.html" class="nav-link">InterpretData</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">InterpretData</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-Slide2Scripting.InterpretData.InterpretData">
+<span id="interpretdata"></span><h1>InterpretData<a class="headerlink" href="#module-Slide2Scripting.InterpretData.InterpretData" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SurfaceFilterType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NUM_SURF">
+<span class="sig-name descname"><span class="pre">NUM_SURF</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NUM_SURF" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.ERRORS">
+<span class="sig-name descname"><span class="pre">ERRORS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.ERRORS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BETWEEN_SF">
+<span class="sig-name descname"><span class="pre">BETWEEN_SF</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BETWEEN_SF" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BELOW_SF">
+<span class="sig-name descname"><span class="pre">BELOW_SF</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BELOW_SF" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NONE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ScenarioGraphDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.NAME">
+<span class="sig-name descname"><span class="pre">NAME</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.NAME" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_LOAD_MAGNITUDE">
+<span class="sig-name descname"><span class="pre">MAX_LOAD_MAGNITUDE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_LOAD_MAGNITUDE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_BOLT_LENGTH">
+<span class="sig-name descname"><span class="pre">MAX_BOLT_LENGTH</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_BOLT_LENGTH" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.PONDED_WATER_HEIGHT">
+<span class="sig-name descname"><span class="pre">PONDED_WATER_HEIGHT</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.PONDED_WATER_HEIGHT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_X">
+<span class="sig-name descname"><span class="pre">SEISMIC_COEFFICIENT_X</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_X" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_Y">
+<span class="sig-name descname"><span class="pre">SEISMIC_COEFFICIENT_Y</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_Y" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_X">
+<span class="sig-name descname"><span class="pre">SPATIAL_CORRELATION_LENGTH_X</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">6</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_X" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_Y">
+<span class="sig-name descname"><span class="pre">SPATIAL_CORRELATION_LENGTH_Y</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">7</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_Y" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.FilterDataType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">FilterDataType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.FilterDataType.ALL_DATA">
+<span class="sig-name descname"><span class="pre">ALL_DATA</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType.ALL_DATA" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.FilterDataType.MINIMUM_IN_EACH_BIN">
+<span class="sig-name descname"><span class="pre">MINIMUM_IN_EACH_BIN</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType.MINIMUM_IN_EACH_BIN" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.AnalysisMethod">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">AnalysisMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getIndex">
+<span class="sig-name descname"><span class="pre">getIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getIndex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getName">
+<span class="sig-name descname"><span class="pre">getName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.Stage">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Stage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.Stage" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.Stage.getIndex">
+<span class="sig-name descname"><span class="pre">getIndex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.Stage.getIndex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.Stage.getDisplayName">
+<span class="sig-name descname"><span class="pre">getDisplayName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.Stage.getDisplayName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SurfaceFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">&lt;google.protobuf.internal.enum_type_wrapper.EnumTypeWrapper</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x00000217CA8382D0&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">below_sf_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">2.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">below_kc_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">below_newmark_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surface_count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_min</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_min_kc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_max_kc</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_min_newmark</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">between_max_newmark</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">20.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getFilterType">
+<span class="sig-name descname"><span class="pre">getFilterType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType" title="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType"><span class="pre">SurfaceFilterType</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getFilterType" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setFilterType">
+<span class="sig-name descname"><span class="pre">setFilterType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType" title="Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType"><span class="pre">SurfaceFilterType</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setFilterType" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowSFValue">
+<span class="sig-name descname"><span class="pre">getBelowSFValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowSFValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowSFValue">
+<span class="sig-name descname"><span class="pre">setBelowSFValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowSFValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowKcValue">
+<span class="sig-name descname"><span class="pre">getBelowKcValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowKcValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowKcValue">
+<span class="sig-name descname"><span class="pre">setBelowKcValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowKcValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowNewmarkValue">
+<span class="sig-name descname"><span class="pre">getBelowNewmarkValue</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowNewmarkValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowNewmarkValue">
+<span class="sig-name descname"><span class="pre">setBelowNewmarkValue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowNewmarkValue" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getSurfaceCount">
+<span class="sig-name descname"><span class="pre">getSurfaceCount</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getSurfaceCount" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setSurfaceCount">
+<span class="sig-name descname"><span class="pre">setSurfaceCount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setSurfaceCount" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getErrorCode">
+<span class="sig-name descname"><span class="pre">getErrorCode</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getErrorCode" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setErrorCode">
+<span class="sig-name descname"><span class="pre">setErrorCode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setErrorCode" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMin">
+<span class="sig-name descname"><span class="pre">getBetweenMin</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMin" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMin">
+<span class="sig-name descname"><span class="pre">setBetweenMin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMin" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMax">
+<span class="sig-name descname"><span class="pre">getBetweenMax</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMax" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMax">
+<span class="sig-name descname"><span class="pre">setBetweenMax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMax" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinKc">
+<span class="sig-name descname"><span class="pre">getBetweenMinKc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinKc" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinKc">
+<span class="sig-name descname"><span class="pre">setBetweenMinKc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinKc" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxKc">
+<span class="sig-name descname"><span class="pre">getBetweenMaxKc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxKc" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxKc">
+<span class="sig-name descname"><span class="pre">setBetweenMaxKc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxKc" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinNewmark">
+<span class="sig-name descname"><span class="pre">getBetweenMinNewmark</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinNewmark" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinNewmark">
+<span class="sig-name descname"><span class="pre">setBetweenMinNewmark</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinNewmark" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxNewmark">
+<span class="sig-name descname"><span class="pre">getBetweenMaxNewmark</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxNewmark" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxNewmark">
+<span class="sig-name descname"><span class="pre">setBetweenMaxNewmark</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxNewmark" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.toProto">
+<span class="sig-name descname"><span class="pre">toProto</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">SurfaceFilterProperties</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.toProto" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.fromProto">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromProto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">props</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">SurfaceFilterProperties</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter" title="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter"><span class="pre">SurfaceFilter</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.fromProto" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">RawExportOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">export_fs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_all_grid_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_slope_intersections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_grid_minimums</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_single_centers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">export_center_location</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportFS">
+<span class="sig-name descname"><span class="pre">getExportFS</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportFS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportFS">
+<span class="sig-name descname"><span class="pre">setExportFS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportFS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportRadius">
+<span class="sig-name descname"><span class="pre">getExportRadius</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportRadius" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportRadius">
+<span class="sig-name descname"><span class="pre">setExportRadius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportRadius" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportAllGridData">
+<span class="sig-name descname"><span class="pre">getExportAllGridData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportAllGridData" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportAllGridData">
+<span class="sig-name descname"><span class="pre">setExportAllGridData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportAllGridData" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSlopeIntersections">
+<span class="sig-name descname"><span class="pre">getExportSlopeIntersections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSlopeIntersections" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSlopeIntersections">
+<span class="sig-name descname"><span class="pre">setExportSlopeIntersections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSlopeIntersections" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportGridMinimums">
+<span class="sig-name descname"><span class="pre">getExportGridMinimums</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportGridMinimums" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportGridMinimums">
+<span class="sig-name descname"><span class="pre">setExportGridMinimums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportGridMinimums" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSingleCenters">
+<span class="sig-name descname"><span class="pre">getExportSingleCenters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSingleCenters" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSingleCenters">
+<span class="sig-name descname"><span class="pre">setExportSingleCenters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSingleCenters" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportCenterLocation">
+<span class="sig-name descname"><span class="pre">getExportCenterLocation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportCenterLocation" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportCenterLocation">
+<span class="sig-name descname"><span class="pre">setExportCenterLocation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportCenterLocation" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.RawExportOptions.toProto">
+<span class="sig-name descname"><span class="pre">toProto</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">RawExportOptions</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.toProto" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SfAlongSlopeResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SfAlongSlopePoint" title="Slide2Scripting.InterpretData.export_util.SfAlongSlopePoint"><span class="pre">SfAlongSlopePoint</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysis_method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getPoints">
+<span class="sig-name descname"><span class="pre">getPoints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SfAlongSlopePoint" title="Slide2Scripting.InterpretData.export_util.SfAlongSlopePoint"><span class="pre">SfAlongSlopePoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getPoints" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getAnalysisMethodName">
+<span class="sig-name descname"><span class="pre">getAnalysisMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getAnalysisMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportForceData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SupportForceData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportForceRow" title="Slide2Scripting.InterpretData.export_util.SupportForceRow"><span class="pre">SupportForceRow</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysis_method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportForceData.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportForceRow" title="Slide2Scripting.InterpretData.export_util.SupportForceRow"><span class="pre">SupportForceRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportForceData.getAnalysisMethodName">
+<span class="sig-name descname"><span class="pre">getAnalysisMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getAnalysisMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportForceData.getForceUnits">
+<span class="sig-name descname"><span class="pre">getForceUnits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getForceUnits" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SfWithTimeSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method_flag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SfWithTimePoint" title="Slide2Scripting.InterpretData.export_util.SfWithTimePoint"><span class="pre">SfWithTimePoint</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getMethodName">
+<span class="sig-name descname"><span class="pre">getMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getPoints">
+<span class="sig-name descname"><span class="pre">getPoints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SfWithTimePoint" title="Slide2Scripting.InterpretData.export_util.SfWithTimePoint"><span class="pre">SfWithTimePoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getPoints" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SfWithTimeResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries" title="Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries"><span class="pre">SfWithTimeSeries</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_axis_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getSeries">
+<span class="sig-name descname"><span class="pre">getSeries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries" title="Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries"><span class="pre">SfWithTimeSeries</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getSeries" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SfWithTimePoint" title="Slide2Scripting.InterpretData.export_util.SfWithTimePoint"><span class="pre">SfWithTimePoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getTimeUnits">
+<span class="sig-name descname"><span class="pre">getTimeUnits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getTimeUnits" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getYAxisLabel">
+<span class="sig-name descname"><span class="pre">getYAxisLabel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getYAxisLabel" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.LambdaFsData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">LambdaFsData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.LambdaFsPoint" title="Slide2Scripting.InterpretData.export_util.LambdaFsPoint"><span class="pre">LambdaFsPoint</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.LambdaFsData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.LambdaFsData.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.LambdaFsPoint" title="Slide2Scripting.InterpretData.export_util.LambdaFsPoint"><span class="pre">LambdaFsPoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.LambdaFsData.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ScenarioGraphSeries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method_flag</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint" title="Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint"><span class="pre">ScenarioGraphPoint</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getMethodName">
+<span class="sig-name descname"><span class="pre">getMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getPoints">
+<span class="sig-name descname"><span class="pre">getPoints</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint" title="Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint"><span class="pre">ScenarioGraphPoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getPoints" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ScenarioGraphResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">series</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries" title="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries"><span class="pre">ScenarioGraphSeries</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_axis_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_axis_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getSeries">
+<span class="sig-name descname"><span class="pre">getSeries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries" title="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries"><span class="pre">ScenarioGraphSeries</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getSeries" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint" title="Slide2Scripting.InterpretData.export_util.ScenarioGraphPoint"><span class="pre">ScenarioGraphPoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getXAxisLabel">
+<span class="sig-name descname"><span class="pre">getXAxisLabel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getXAxisLabel" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getYAxisLabel">
+<span class="sig-name descname"><span class="pre">getYAxisLabel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getYAxisLabel" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportPressureData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SupportPressureData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportPressureRow" title="Slide2Scripting.InterpretData.export_util.SupportPressureRow"><span class="pre">SupportPressureRow</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysis_method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportPressureRow" title="Slide2Scripting.InterpretData.export_util.SupportPressureRow"><span class="pre">SupportPressureRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getAnalysisMethodName">
+<span class="sig-name descname"><span class="pre">getAnalysisMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getAnalysisMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getPressureUnits">
+<span class="sig-name descname"><span class="pre">getPressureUnits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getPressureUnits" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">BoltTensionDiagram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bolt_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportTensionRow" title="Slide2Scripting.InterpretData.export_util.SupportTensionRow"><span class="pre">SupportTensionRow</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getBoltId">
+<span class="sig-name descname"><span class="pre">getBoltId</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getBoltId" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartX">
+<span class="sig-name descname"><span class="pre">getStartX</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartY">
+<span class="sig-name descname"><span class="pre">getStartY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndX">
+<span class="sig-name descname"><span class="pre">getEndX</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndX" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndY">
+<span class="sig-name descname"><span class="pre">getEndY</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportTensionRow" title="Slide2Scripting.InterpretData.export_util.SupportTensionRow"><span class="pre">SupportTensionRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportTensionData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SupportTensionData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">diagrams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram" title="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram"><span class="pre">BoltTensionDiagram</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysis_method_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_units</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getDiagrams">
+<span class="sig-name descname"><span class="pre">getDiagrams</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram" title="Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram"><span class="pre">BoltTensionDiagram</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getDiagrams" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getRows">
+<span class="sig-name descname"><span class="pre">getRows</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SupportTensionRow" title="Slide2Scripting.InterpretData.export_util.SupportTensionRow"><span class="pre">SupportTensionRow</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getRows" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getAnalysisMethodName">
+<span class="sig-name descname"><span class="pre">getAnalysisMethodName</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getAnalysisMethodName" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getForceUnits">
+<span class="sig-name descname"><span class="pre">getForceUnits</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getForceUnits" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">InterpretData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Examples:
+<a class="reference internal" href="../examples/interpret/interpret_data.html#id1"><span class="std std-ref">Code Snippet: Interpret Data</span></a></p>
+<p>Interpret Data menu: analysis methods, surface filter, all surfaces, raw export, SF along slope, support force.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.listStages">
+<span class="sig-name descname"><span class="pre">listStages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.Stage" title="Slide2Scripting.InterpretData.InterpretData.Stage"><span class="pre">Stage</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.listStages" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveStage">
+<span class="sig-name descname"><span class="pre">getActiveStage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveStage" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveStage">
+<span class="sig-name descname"><span class="pre">setActiveStage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveStage" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.listAnalysisMethods">
+<span class="sig-name descname"><span class="pre">listAnalysisMethods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod" title="Slide2Scripting.InterpretData.InterpretData.AnalysisMethod"><span class="pre">AnalysisMethod</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.listAnalysisMethods" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveAnalysisMethod">
+<span class="sig-name descname"><span class="pre">getActiveAnalysisMethod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod" title="Slide2Scripting.InterpretData.InterpretData.AnalysisMethod"><span class="pre">AnalysisMethod</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveAnalysisMethod" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveAnalysisMethod">
+<span class="sig-name descname"><span class="pre">setActiveAnalysisMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodIndex</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveAnalysisMethod" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSurfaceFilter">
+<span class="sig-name descname"><span class="pre">getSurfaceFilter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter" title="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter"><span class="pre">SurfaceFilter</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSurfaceFilter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.setSurfaceFilter">
+<span class="sig-name descname"><span class="pre">setSurfaceFilter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">surfaceFilter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter" title="Slide2Scripting.InterpretData.InterpretData.SurfaceFilter"><span class="pre">SurfaceFilter</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setSurfaceFilter" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfaces">
+<span class="sig-name descname"><span class="pre">getAllSurfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html#Slide2Scripting.InterpretData.export_util.SlipSurfaceRecord" title="Slide2Scripting.InterpretData.export_util.SlipSurfaceRecord"><span class="pre">SlipSurfaceRecord</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfaces" title="Link to this definition">#</a></dt>
+<dd><p>Returns slip surfaces for the active analysis method that pass the current surface filter.</p>
+<p>Fetches one surface per RPC (same pattern as support diagrams) to avoid oversized responses.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.copyRawExportToClipboard">
+<span class="sig-name descname"><span class="pre">copyRawExportToClipboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions" title="Slide2Scripting.InterpretData.InterpretData.RawExportOptions"><span class="pre">RawExportOptions</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.copyRawExportToClipboard" title="Link to this definition">#</a></dt>
+<dd><p>Build raw export text in Interpret and copy it to the system clipboard.
+Avoids returning large payloads over gRPC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.exportRawExportToFile">
+<span class="sig-name descname"><span class="pre">exportRawExportToFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filePath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions" title="Slide2Scripting.InterpretData.InterpretData.RawExportOptions"><span class="pre">RawExportOptions</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.exportRawExportToFile" title="Link to this definition">#</a></dt>
+<dd><p>Build raw export text in Interpret and write it to filePath.
+Avoids returning large payloads over gRPC.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfacesVisible">
+<span class="sig-name descname"><span class="pre">getAllSurfacesVisible</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfacesVisible" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.setAllSurfacesVisible">
+<span class="sig-name descname"><span class="pre">setAllSurfacesVisible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">visible</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setAllSurfacesVisible" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfAlongSlope">
+<span class="sig-name descname"><span class="pre">getSfAlongSlope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeLeftSlopeIntercept</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">includeRightSlopeIntercept</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filterType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType" title="Slide2Scripting.InterpretData.InterpretData.FilterDataType"><span class="pre">FilterDataType</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">FilterDataType.MINIMUM_IN_EACH_BIN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numberOfBins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult" title="Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult"><span class="pre">SfAlongSlopeResult</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfAlongSlope" title="Link to this definition">#</a></dt>
+<dd><p>Return Graph SF Along Slope points for the active analysis method (one series).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportForceData">
+<span class="sig-name descname"><span class="pre">getSupportForceData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData" title="Slide2Scripting.InterpretData.InterpretData.SupportForceData"><span class="pre">SupportForceData</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportForceData" title="Link to this definition">#</a></dt>
+<dd><p>Return Support Force Diagram rows for all supports.
+Internally lists supports and fetches one support per RPC, then combines the results.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfWithTime">
+<span class="sig-name descname"><span class="pre">getSfWithTime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodFlags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult" title="Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult"><span class="pre">SfWithTimeResult</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfWithTime" title="Link to this definition">#</a></dt>
+<dd><p>Return Graph SF with Time series for the requested analysis methods (or all when methodFlags is None).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getLambdaFsData">
+<span class="sig-name descname"><span class="pre">getLambdaFsData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.LambdaFsData" title="Slide2Scripting.InterpretData.InterpretData.LambdaFsData"><span class="pre">LambdaFsData</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getLambdaFsData" title="Link to this definition">#</a></dt>
+<dd><p>Return Graph Lambda vs FS points for all surfaces.
+Internally lists surfaces and fetches one surface per RPC, then combines force and moment series.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getScenarioGraphData">
+<span class="sig-name descname"><span class="pre">getScenarioGraphData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scenarioNames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataType</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType" title="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType"><span class="pre">ScenarioGraphDataType</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">ScenarioGraphDataType.NAME</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">material</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">probabilityOfFailure</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult" title="Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult"><span class="pre">ScenarioGraphResult</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getScenarioGraphData" title="Link to this definition">#</a></dt>
+<dd><p>Return Graph Scenarios series for the requested scenarios and data type.</p>
+<p>scenarioNames: bare scenario names or “Model - Scenario” labels (None/empty = all).
+material: material name (str) or 0-based index (int); required for spatial correlation types.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportPressureData">
+<span class="sig-name descname"><span class="pre">getSupportPressureData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData" title="Slide2Scripting.InterpretData.InterpretData.SupportPressureData"><span class="pre">SupportPressureData</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportPressureData" title="Link to this definition">#</a></dt>
+<dd><p>Return Support Pressure Diagram rows for all supports.
+Internally lists supports and fetches one support per RPC, then combines the results.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportTensionData">
+<span class="sig-name descname"><span class="pre">getSupportTensionData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData" title="Slide2Scripting.InterpretData.InterpretData.SupportTensionData"><span class="pre">SupportTensionData</span></a></span></span><a class="headerlink" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportTensionData" title="Link to this definition">#</a></dt>
+<dd><p>Return Support Tension Diagram data for all bolts.
+Internally lists bolts and fetches one bolt per RPC, then combines the results.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Slide2Scripting.InterpretData.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">InterpretData</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Slide2Scripting.InterpretData.export_util.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">export_util</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NUM_SURF"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType.NUM_SURF</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.ERRORS"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType.ERRORS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BETWEEN_SF"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType.BETWEEN_SF</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.BELOW_SF"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType.BELOW_SF</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilterType.NONE"><code class="docutils literal notranslate"><span class="pre">SurfaceFilterType.NONE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.NAME"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.NAME</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_LOAD_MAGNITUDE"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.MAX_LOAD_MAGNITUDE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.MAX_BOLT_LENGTH"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.MAX_BOLT_LENGTH</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.PONDED_WATER_HEIGHT"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.PONDED_WATER_HEIGHT</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_X"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.SEISMIC_COEFFICIENT_X</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SEISMIC_COEFFICIENT_Y"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.SEISMIC_COEFFICIENT_Y</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_X"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_X</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_Y"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphDataType.SPATIAL_CORRELATION_LENGTH_Y</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType"><code class="docutils literal notranslate"><span class="pre">FilterDataType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType.ALL_DATA"><code class="docutils literal notranslate"><span class="pre">FilterDataType.ALL_DATA</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.FilterDataType.MINIMUM_IN_EACH_BIN"><code class="docutils literal notranslate"><span class="pre">FilterDataType.MINIMUM_IN_EACH_BIN</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod"><code class="docutils literal notranslate"><span class="pre">AnalysisMethod</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getIndex"><code class="docutils literal notranslate"><span class="pre">AnalysisMethod.getIndex()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.AnalysisMethod.getName"><code class="docutils literal notranslate"><span class="pre">AnalysisMethod.getName()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.Stage"><code class="docutils literal notranslate"><span class="pre">Stage</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.Stage.getIndex"><code class="docutils literal notranslate"><span class="pre">Stage.getIndex()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.Stage.getDisplayName"><code class="docutils literal notranslate"><span class="pre">Stage.getDisplayName()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getFilterType"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getFilterType()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setFilterType"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setFilterType()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowSFValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBelowSFValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowSFValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBelowSFValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowKcValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBelowKcValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowKcValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBelowKcValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBelowNewmarkValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBelowNewmarkValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBelowNewmarkValue"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBelowNewmarkValue()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getSurfaceCount"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getSurfaceCount()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setSurfaceCount"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setSurfaceCount()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getErrorCode"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getErrorCode()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setErrorCode"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setErrorCode()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMin"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMin()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMin"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMin()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMax"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMax()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMax"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMax()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinKc"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMinKc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinKc"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMinKc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxKc"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMaxKc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxKc"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMaxKc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMinNewmark"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMinNewmark()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMinNewmark"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMinNewmark()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.getBetweenMaxNewmark"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.getBetweenMaxNewmark()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.setBetweenMaxNewmark"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.setBetweenMaxNewmark()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.toProto"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.toProto()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SurfaceFilter.fromProto"><code class="docutils literal notranslate"><span class="pre">SurfaceFilter.fromProto()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions"><code class="docutils literal notranslate"><span class="pre">RawExportOptions</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportFS"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportFS()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportFS"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportFS()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportRadius"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportRadius()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportRadius"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportRadius()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportAllGridData"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportAllGridData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportAllGridData"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportAllGridData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSlopeIntersections"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportSlopeIntersections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSlopeIntersections"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportSlopeIntersections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportGridMinimums"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportGridMinimums()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportGridMinimums"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportGridMinimums()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportSingleCenters"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportSingleCenters()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportSingleCenters"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportSingleCenters()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.getExportCenterLocation"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.getExportCenterLocation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.setExportCenterLocation"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.setExportCenterLocation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.RawExportOptions.toProto"><code class="docutils literal notranslate"><span class="pre">RawExportOptions.toProto()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult"><code class="docutils literal notranslate"><span class="pre">SfAlongSlopeResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getPoints"><code class="docutils literal notranslate"><span class="pre">SfAlongSlopeResult.getPoints()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfAlongSlopeResult.getAnalysisMethodName"><code class="docutils literal notranslate"><span class="pre">SfAlongSlopeResult.getAnalysisMethodName()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData"><code class="docutils literal notranslate"><span class="pre">SupportForceData</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getRows"><code class="docutils literal notranslate"><span class="pre">SupportForceData.getRows()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getAnalysisMethodName"><code class="docutils literal notranslate"><span class="pre">SupportForceData.getAnalysisMethodName()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportForceData.getForceUnits"><code class="docutils literal notranslate"><span class="pre">SupportForceData.getForceUnits()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries"><code class="docutils literal notranslate"><span class="pre">SfWithTimeSeries</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getMethodName"><code class="docutils literal notranslate"><span class="pre">SfWithTimeSeries.getMethodName()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeSeries.getPoints"><code class="docutils literal notranslate"><span class="pre">SfWithTimeSeries.getPoints()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult"><code class="docutils literal notranslate"><span class="pre">SfWithTimeResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getSeries"><code class="docutils literal notranslate"><span class="pre">SfWithTimeResult.getSeries()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getRows"><code class="docutils literal notranslate"><span class="pre">SfWithTimeResult.getRows()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getTimeUnits"><code class="docutils literal notranslate"><span class="pre">SfWithTimeResult.getTimeUnits()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SfWithTimeResult.getYAxisLabel"><code class="docutils literal notranslate"><span class="pre">SfWithTimeResult.getYAxisLabel()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.LambdaFsData"><code class="docutils literal notranslate"><span class="pre">LambdaFsData</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.LambdaFsData.getRows"><code class="docutils literal notranslate"><span class="pre">LambdaFsData.getRows()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphSeries</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getMethodName"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphSeries.getMethodName()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphSeries.getPoints"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphSeries.getPoints()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphResult</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getSeries"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphResult.getSeries()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getRows"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphResult.getRows()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getXAxisLabel"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphResult.getXAxisLabel()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.ScenarioGraphResult.getYAxisLabel"><code class="docutils literal notranslate"><span class="pre">ScenarioGraphResult.getYAxisLabel()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData"><code class="docutils literal notranslate"><span class="pre">SupportPressureData</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getRows"><code class="docutils literal notranslate"><span class="pre">SupportPressureData.getRows()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getAnalysisMethodName"><code class="docutils literal notranslate"><span class="pre">SupportPressureData.getAnalysisMethodName()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportPressureData.getPressureUnits"><code class="docutils literal notranslate"><span class="pre">SupportPressureData.getPressureUnits()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getBoltId"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getBoltId()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartX"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getStartX()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getStartY"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getStartY()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndX"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getEndX()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getEndY"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getEndY()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.BoltTensionDiagram.getRows"><code class="docutils literal notranslate"><span class="pre">BoltTensionDiagram.getRows()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData"><code class="docutils literal notranslate"><span class="pre">SupportTensionData</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getDiagrams"><code class="docutils literal notranslate"><span class="pre">SupportTensionData.getDiagrams()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getRows"><code class="docutils literal notranslate"><span class="pre">SupportTensionData.getRows()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getAnalysisMethodName"><code class="docutils literal notranslate"><span class="pre">SupportTensionData.getAnalysisMethodName()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.SupportTensionData.getForceUnits"><code class="docutils literal notranslate"><span class="pre">SupportTensionData.getForceUnits()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData"><code class="docutils literal notranslate"><span class="pre">InterpretData</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.listStages"><code class="docutils literal notranslate"><span class="pre">InterpretData.listStages()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveStage"><code class="docutils literal notranslate"><span class="pre">InterpretData.getActiveStage()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveStage"><code class="docutils literal notranslate"><span class="pre">InterpretData.setActiveStage()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.listAnalysisMethods"><code class="docutils literal notranslate"><span class="pre">InterpretData.listAnalysisMethods()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getActiveAnalysisMethod"><code class="docutils literal notranslate"><span class="pre">InterpretData.getActiveAnalysisMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setActiveAnalysisMethod"><code class="docutils literal notranslate"><span class="pre">InterpretData.setActiveAnalysisMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSurfaceFilter"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSurfaceFilter()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setSurfaceFilter"><code class="docutils literal notranslate"><span class="pre">InterpretData.setSurfaceFilter()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfaces"><code class="docutils literal notranslate"><span class="pre">InterpretData.getAllSurfaces()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.copyRawExportToClipboard"><code class="docutils literal notranslate"><span class="pre">InterpretData.copyRawExportToClipboard()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.exportRawExportToFile"><code class="docutils literal notranslate"><span class="pre">InterpretData.exportRawExportToFile()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getAllSurfacesVisible"><code class="docutils literal notranslate"><span class="pre">InterpretData.getAllSurfacesVisible()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.setAllSurfacesVisible"><code class="docutils literal notranslate"><span class="pre">InterpretData.setAllSurfacesVisible()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfAlongSlope"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSfAlongSlope()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportForceData"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSupportForceData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSfWithTime"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSfWithTime()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getLambdaFsData"><code class="docutils literal notranslate"><span class="pre">InterpretData.getLambdaFsData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getScenarioGraphData"><code class="docutils literal notranslate"><span class="pre">InterpretData.getScenarioGraphData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportPressureData"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSupportPressureData()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.InterpretData.InterpretData.InterpretData.getSupportTensionData"><code class="docutils literal notranslate"><span class="pre">InterpretData.getSupportTensionData()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/generatedAPIDocFiles/Slide2Scripting.InterpretData.InterpretData.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Rocscience Inc..
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.2.0.
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

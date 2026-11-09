@@ -1,0 +1,14 @@
+Project Settings: Multi-Doc Scenario Model Example
+==================================================
+
+Download the `MultiDocExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/MultiDocExample.slmd>`_ for this example.
+
+.. _project settings multi doc scenario model:
+.. literalinclude:: ../../example_code/multi_doc_scenario_model_example.py
+   :language: python
+   :caption: Code Snippet: Multi-Doc Scenario Model
+
+Output
+------------------
+.. literalinclude:: ../../example_code/multi_doc_scenario_model_example_result.txt
+   :language: python

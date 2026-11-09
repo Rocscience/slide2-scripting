@@ -1,0 +1,7 @@
+SupportDesigner
+======================================
+
+.. automodule:: Slide2Scripting.SupportDesigner
+   :members:
+   :show-inheritance:
+   :undoc-members:

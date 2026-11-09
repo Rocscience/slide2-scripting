@@ -1,0 +1,7 @@
+Hyperbolic
+============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Hyperbolic
+   :members:
+   :show-inheritance:
+   :undoc-members:

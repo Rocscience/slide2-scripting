@@ -1,0 +1,7 @@
+GeneralizedHoekBrown
+======================================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.GeneralizedHoekBrown
+   :members:
+   :show-inheritance:
+   :undoc-members:

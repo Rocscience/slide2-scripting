@@ -1,0 +1,7 @@
+RapidDrawdown
+=======================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.RapidDrawdown
+   :members:
+   :show-inheritance:
+   :undoc-members:

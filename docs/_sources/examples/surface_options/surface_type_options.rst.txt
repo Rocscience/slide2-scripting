@@ -1,0 +1,14 @@
+Surface Options: Surface Type Example
+=====================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _surface options surface type:
+.. literalinclude:: ../../example_code/surface_type_options_example.py
+   :language: python
+   :caption: Code Snippet: Surface Type Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/surface_type_options_example_result.txt
+   :language: python

@@ -1,0 +1,14 @@
+Surface Options: Surface Filters Example
+========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _surface options surface filters:
+.. literalinclude:: ../../example_code/surface_filters_example.py
+   :language: python
+   :caption: Code Snippet: Surface Filters Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/surface_filters_example_result.txt
+   :language: python

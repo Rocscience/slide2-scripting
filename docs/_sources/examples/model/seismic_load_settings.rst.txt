@@ -1,0 +1,14 @@
+Seismic Load Settings Example
+=============================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _seismic load settings example:
+.. literalinclude:: ../../example_code/seismic_load_settings_example.py
+   :language: python
+   :caption: Code Snippet: Seismic Load Settings
+
+Output
+------------------
+.. literalinclude:: ../../example_code/seismic_load_settings_example_result.txt
+   :language: python

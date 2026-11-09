@@ -1,0 +1,7 @@
+InterpretDisplayOptions
+=============================================================
+
+.. automodule:: Slide2Scripting.DisplayOptions.InterpretDisplayOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

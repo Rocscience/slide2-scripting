@@ -1,0 +1,14 @@
+Modeler Display Options Example
+===============================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _modeler display options example:
+.. literalinclude:: ../../example_code/modeler_display_options_example.py
+   :language: python
+   :caption: Code Snippet: Modeler Display Options
+
+Output
+------------------
+.. literalinclude:: ../../example_code/modeler_display_options_example_result.txt
+   :language: python

@@ -1,0 +1,7 @@
+StatisticsProjectSettings
+================================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.StatisticsProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

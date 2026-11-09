@@ -1,0 +1,7 @@
+TransientProjectSettings
+===============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.TransientProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

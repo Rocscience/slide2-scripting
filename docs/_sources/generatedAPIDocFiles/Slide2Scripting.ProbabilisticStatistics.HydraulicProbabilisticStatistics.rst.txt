@@ -1,0 +1,7 @@
+HydraulicProbabilisticStatistics
+===============================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.HydraulicProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

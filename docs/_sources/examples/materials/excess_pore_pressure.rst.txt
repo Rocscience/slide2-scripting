@@ -1,0 +1,14 @@
+Material Properties: Excess Pore Pressure Example
+=================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties excess pore pressure:
+.. literalinclude:: ../../example_code/excess_pore_pressure_example.py
+   :language: python
+   :caption: Code Snippet: Excess Pore Pressure
+
+Output
+------------------
+.. literalinclude:: ../../example_code/excess_pore_pressure_example_result.txt
+   :language: python

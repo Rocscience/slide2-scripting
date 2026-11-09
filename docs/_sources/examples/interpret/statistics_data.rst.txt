@@ -1,0 +1,14 @@
+Statistics Data Example
+=======================
+
+Download the `StatisticsExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/StatisticsExample.slmd>`_ for this example.
+
+.. _statistics data example:
+.. literalinclude:: ../../example_code/statistics_data_example.py
+   :language: python
+   :caption: Code Snippet: Statistics Data
+
+Output
+------------------
+.. literalinclude:: ../../example_code/statistics_data_example_result.txt
+   :language: python

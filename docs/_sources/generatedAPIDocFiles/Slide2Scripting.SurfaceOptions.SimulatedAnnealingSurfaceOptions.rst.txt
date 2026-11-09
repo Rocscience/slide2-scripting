@@ -1,0 +1,7 @@
+SimulatedAnnealingSurfaceOptions
+======================================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.SimulatedAnnealingSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

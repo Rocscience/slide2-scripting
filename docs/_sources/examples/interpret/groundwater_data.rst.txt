@@ -1,0 +1,14 @@
+Groundwater Data Example
+========================
+
+Download the `GroundwaterExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/GroundwaterExample.slmd>`_ for this example.
+
+.. _groundwater data example:
+.. literalinclude:: ../../example_code/groundwater_data_example.py
+   :language: python
+   :caption: Code Snippet: Groundwater Data
+
+Output
+------------------
+.. literalinclude:: ../../example_code/groundwater_data_example_result.txt
+   :language: python

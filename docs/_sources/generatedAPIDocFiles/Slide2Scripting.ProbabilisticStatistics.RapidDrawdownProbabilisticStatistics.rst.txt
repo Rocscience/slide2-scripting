@@ -1,0 +1,7 @@
+RapidDrawdownProbabilisticStatistics
+===================================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.RapidDrawdownProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

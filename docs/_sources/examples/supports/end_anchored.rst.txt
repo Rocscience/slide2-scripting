@@ -1,0 +1,14 @@
+Support Properties: End Anchored Example
+========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties end anchored:
+.. literalinclude:: ../../example_code/end_anchored_example.py
+   :language: python
+   :caption: Code Snippet: End Anchored Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/end_anchored_example_result.txt
+   :language: python

@@ -1,0 +1,7 @@
+MohrCoulomb
+=============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.MohrCoulomb
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+SlopeLimitsSettings
+==========================================
+
+.. automodule:: Slide2Scripting.SlopeLimitsSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

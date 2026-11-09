@@ -1,0 +1,7 @@
+ModelerDisplayOptions
+===========================================================
+
+.. automodule:: Slide2Scripting.DisplayOptions.ModelerDisplayOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,14 @@
+Material Properties: Rapid Drawdown Example
+===========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties rapid drawdown:
+.. literalinclude:: ../../example_code/rapid_drawdown_example.py
+   :language: python
+   :caption: Code Snippet: Rapid Drawdown
+
+Output
+------------------
+.. literalinclude:: ../../example_code/rapid_drawdown_example_result.txt
+   :language: python

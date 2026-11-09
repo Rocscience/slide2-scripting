@@ -1,0 +1,7 @@
+GridSearchSurfaceOptions
+==============================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.GridSearchSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

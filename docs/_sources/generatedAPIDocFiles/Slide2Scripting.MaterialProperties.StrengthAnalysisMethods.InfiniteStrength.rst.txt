@@ -1,0 +1,7 @@
+InfiniteStrength
+==================================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.InfiniteStrength
+   :members:
+   :show-inheritance:
+   :undoc-members:

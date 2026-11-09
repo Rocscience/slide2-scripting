@@ -1,0 +1,15 @@
+InterpretData
+=====================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.InterpretData.InterpretData
+   Slide2Scripting.InterpretData.export_util
+
+
+.. automodule:: Slide2Scripting.InterpretData
+   :members:
+   :show-inheritance:
+   :undoc-members:

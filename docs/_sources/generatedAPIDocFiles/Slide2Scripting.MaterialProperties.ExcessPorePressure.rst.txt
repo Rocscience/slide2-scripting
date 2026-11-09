@@ -1,0 +1,7 @@
+ExcessPorePressure
+============================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.ExcessPorePressure
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,141 @@
+Python Script Examples
+======================
+
+Slide2 models included in the examples can be found here: `example_models <https://github.com/Rocscience/slide2-scripting/tree/main/examples>`_
+
+Model
+-----
+.. toctree::
+   :maxdepth: 1
+
+   examples/model/model
+   examples/model/modeler
+   examples/model/interpret
+   examples/model/seismic_load_settings
+   examples/model/slope_limits_settings
+   examples/model/tension_crack_properties
+   examples/model/support_designer
+
+Materials
+---------
+.. toctree::
+   :maxdepth: 1
+
+   examples/materials/material_property
+   examples/materials/mohr_coulomb
+   examples/materials/undrained
+   examples/materials/no_strength
+   examples/materials/infinite_strength
+   examples/materials/hoek_brown
+   examples/materials/generalized_hoek_brown
+   examples/materials/barton_bandis
+   examples/materials/power_curve
+   examples/materials/hyperbolic
+   examples/materials/vertical_stress_ratio
+   examples/materials/drained_undrained
+   examples/materials/shansep
+   examples/materials/anisotropic
+   examples/materials/snowden_anisotropic
+   examples/materials/modified_snowden_anisotropic
+   examples/materials/cni_rock_mass
+   examples/materials/shear_normal_strength
+   examples/materials/cphi_strength
+   examples/materials/undrained_vertical_strength
+   examples/materials/discrete_strength
+   examples/materials/anisotropic_function_strength
+   examples/materials/generalized_anisotropic_strength
+   examples/materials/water_parameters
+   examples/materials/hydraulic_properties
+   examples/materials/excess_pore_pressure
+   examples/materials/rapid_drawdown
+   examples/materials/unsaturated_shear
+   examples/materials/user_defined_functions
+   examples/materials/user_defined_hydraulic_models
+
+Supports
+--------
+.. toctree::
+   :maxdepth: 1
+
+   examples/supports/support_property
+   examples/supports/end_anchored
+   examples/supports/grouted_tieback
+   examples/supports/soil_nail
+   examples/supports/grouted_tieback_with_friction
+   examples/supports/helical_anchor
+   examples/supports/geosynthetic
+   examples/supports/micro_pile
+   examples/supports/rspile
+   examples/supports/launched_soil_nail
+   examples/supports/user_defined_support
+   examples/supports/retaining_wall_efw
+
+Project Settings
+----------------
+.. toctree::
+   :maxdepth: 1
+
+   examples/project_settings/general_project_settings
+   examples/project_settings/soil_profile_project_settings
+   examples/project_settings/methods_project_settings
+   examples/project_settings/scenarios_project_settings
+   examples/project_settings/seismic_project_settings
+   examples/project_settings/random_numbers_project_settings
+   examples/project_settings/groundwater_project_settings
+   examples/project_settings/transient_project_settings
+   examples/project_settings/statistics_project_settings
+   examples/project_settings/design_standards_project_settings
+   examples/project_settings/advanced_project_settings
+   examples/project_settings/back_analysis_tension_map
+   examples/project_settings/multi_doc_scenario_model
+
+Surface Options
+---------------
+.. toctree::
+   :maxdepth: 1
+
+   examples/surface_options/surface_type_options
+   examples/surface_options/surface_filters
+   examples/surface_options/optimize_surface_settings
+   examples/surface_options/grid_search
+   examples/surface_options/block_search
+   examples/surface_options/path_search
+   examples/surface_options/slope_search
+   examples/surface_options/simulated_annealing
+   examples/surface_options/cuckoo_search
+   examples/surface_options/particle_swarm
+   examples/surface_options/auto_refine_search
+
+Display Options
+---------------
+.. toctree::
+   :maxdepth: 1
+
+   examples/display/modeler_display_options
+   examples/display/interpret_display_options
+
+Interpret
+---------
+.. toctree::
+   :maxdepth: 1
+
+   examples/interpret/interpret_data
+   examples/interpret/interpret_query
+   examples/interpret/groundwater_data
+   examples/interpret/statistics_data
+
+Probabilistic Statistics
+------------------------
+.. toctree::
+   :maxdepth: 1
+
+   examples/probabilistic/material_probabilistic_statistics
+   examples/probabilistic/support_probabilistic_statistics
+   examples/probabilistic/hydraulic_probabilistic_statistics
+   examples/probabilistic/load_probabilistic_statistics
+   examples/probabilistic/piezo_probabilistic_statistics
+   examples/probabilistic/seismic_probabilistic_statistics
+   examples/probabilistic/water_table_probabilistic_statistics
+   examples/probabilistic/drawdown_probabilistic_statistics
+   examples/probabilistic/tension_crack_probabilistic_statistics
+

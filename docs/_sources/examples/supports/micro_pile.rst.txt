@@ -1,0 +1,14 @@
+Support Properties: Micro Pile Example
+======================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties micro pile:
+.. literalinclude:: ../../example_code/micro_pile_example.py
+   :language: python
+   :caption: Code Snippet: Micro Pile Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/micro_pile_example_result.txt
+   :language: python

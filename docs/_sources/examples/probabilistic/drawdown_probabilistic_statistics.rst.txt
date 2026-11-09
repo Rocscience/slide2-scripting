@@ -1,0 +1,14 @@
+Probabilistic Statistics: Drawdown Example
+==========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _probabilistic statistics drawdown:
+.. literalinclude:: ../../example_code/drawdown_probabilistic_statistics_example.py
+   :language: python
+   :caption: Code Snippet: Drawdown Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/drawdown_probabilistic_statistics_example_result.txt
+   :language: python

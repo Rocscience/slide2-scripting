@@ -1,0 +1,7 @@
+MultiDocScenarioModel
+============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.MultiDocScenarioModel
+   :members:
+   :show-inheritance:
+   :undoc-members:

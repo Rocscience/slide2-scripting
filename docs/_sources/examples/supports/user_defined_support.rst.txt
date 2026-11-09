@@ -1,0 +1,14 @@
+Support Properties: User Defined Support Example
+================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties user defined:
+.. literalinclude:: ../../example_code/user_defined_support_example.py
+   :language: python
+   :caption: Code Snippet: User Defined Support Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/user_defined_support_example_result.txt
+   :language: python

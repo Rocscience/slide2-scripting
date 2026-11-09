@@ -1,0 +1,16 @@
+StatisticsData
+======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.StatisticsData.StatisticsData
+   Slide2Scripting.StatisticsData.export_util
+   Slide2Scripting.StatisticsData.types
+
+
+.. automodule:: Slide2Scripting.StatisticsData
+   :members:
+   :show-inheritance:
+   :undoc-members:

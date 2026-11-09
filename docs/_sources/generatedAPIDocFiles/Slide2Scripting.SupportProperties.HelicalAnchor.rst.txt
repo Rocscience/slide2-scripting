@@ -1,0 +1,7 @@
+HelicalAnchor
+======================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.HelicalAnchor
+   :members:
+   :show-inheritance:
+   :undoc-members:

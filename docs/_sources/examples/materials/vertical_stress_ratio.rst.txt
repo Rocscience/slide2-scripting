@@ -1,0 +1,14 @@
+Material Properties: Vertical Stress Ratio Example
+==================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties vertical stress ratio:
+.. literalinclude:: ../../example_code/vertical_stress_ratio_example.py
+   :language: python
+   :caption: Code Snippet: Vertical Stress Ratio Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/vertical_stress_ratio_example_result.txt
+   :language: python

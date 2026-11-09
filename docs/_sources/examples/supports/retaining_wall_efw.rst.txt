@@ -1,0 +1,14 @@
+Support Properties: Retaining Wall EFW Example
+==============================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties retaining wall efw:
+.. literalinclude:: ../../example_code/retaining_wall_efw_example.py
+   :language: python
+   :caption: Code Snippet: Retaining Wall EFW Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/retaining_wall_efw_example_result.txt
+   :language: python

@@ -1,0 +1,14 @@
+Tension Crack Properties Example
+================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _tension crack properties example:
+.. literalinclude:: ../../example_code/tension_crack_properties_example.py
+   :language: python
+   :caption: Code Snippet: Tension Crack Properties
+
+Output
+------------------
+.. literalinclude:: ../../example_code/tension_crack_properties_example_result.txt
+   :language: python

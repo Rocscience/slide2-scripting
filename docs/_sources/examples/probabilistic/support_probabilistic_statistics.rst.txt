@@ -1,0 +1,14 @@
+Probabilistic Statistics: Support Example
+=========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _probabilistic statistics support:
+.. literalinclude:: ../../example_code/support_probabilistic_statistics_example.py
+   :language: python
+   :caption: Code Snippet: Support Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/support_probabilistic_statistics_example_result.txt
+   :language: python

@@ -1,0 +1,28 @@
+MaterialProperties
+==========================================
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Slide2Scripting.MaterialProperties.StrengthAnalysisMethods
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.MaterialProperties.ExcessPorePressure
+   Slide2Scripting.MaterialProperties.HydraulicProperties
+   Slide2Scripting.MaterialProperties.MaterialProperty
+   Slide2Scripting.MaterialProperties.MaterialStrength
+   Slide2Scripting.MaterialProperties.RapidDrawdown
+   Slide2Scripting.MaterialProperties.UnsaturatedShear
+   Slide2Scripting.MaterialProperties.UserDefinedFunctions
+   Slide2Scripting.MaterialProperties.UserDefinedWaterMethods
+   Slide2Scripting.MaterialProperties.WaterParameters
+
+
+.. automodule:: Slide2Scripting.MaterialProperties
+   :members:
+   :show-inheritance:
+   :undoc-members:

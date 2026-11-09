@@ -1,0 +1,59 @@
+.. Slide2 Scripting Client Library documentation master file
+
+Slide2 Scripting Reference Manual
+========================================================
+
+**Version: 1.0.0**
+
+Prerequisites
+--------------------
+Before you begin, ensure you have the Slide2 program installed. You must have at minimum Version 9.045 in order to use this feature.
+
+
+Python Environment
+--------------------
+There are two methods to run a script, which differ in the Python environment used:
+
+1. Running on RocScript Editor
+	* Comes pre-installed with Slide2 and includes the **Slide2 Python API library**
+	* For all-level users
+2. Running on your own Python environment
+	* Requires downloading the **Slide2 Python API library**
+	* For advanced users
+
+Please refer to `Getting Started with Slide2 Python Scripting <https://www.rocscience.com/help/slide2/documentation/scripting/scripting-overview>`_
+for more information.
+
+Install Slide2 Python API Library
+-----------------------------------
+pip installation
+
+.. code-block::
+
+   pip install Slide2Scripting
+
+If you are not using the latest release of Slide2, you need to specify a library version that matches your Slide2 version. For example:
+
+.. code-block::
+
+	pip install "Slide2Scripting==1.0.0"
+
+Slide2 Scripting Tutorials
+------------------------------
+Please visit the Slide2 tutorial website for more detailed tutorials.
+
+
+
+1. `Slide2 Tutorials Overview. <https://www.rocscience.com/help/slide2/tutorials/tutorials-overview>`_
+
+.. image:: pictures/cover.png
+
+
+Table of Contents
+-------------------------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 2
+
+   generatedAPIDocFiles/Slide2Scripting
+   examples

@@ -1,0 +1,14 @@
+Support Properties: Launched Soil Nail Example
+==============================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties launched soil nail:
+.. literalinclude:: ../../example_code/launched_soil_nail_example.py
+   :language: python
+   :caption: Code Snippet: Launched Soil Nail Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/launched_soil_nail_example_result.txt
+   :language: python

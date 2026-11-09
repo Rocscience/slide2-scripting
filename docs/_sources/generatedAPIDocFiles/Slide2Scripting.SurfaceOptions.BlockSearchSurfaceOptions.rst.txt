@@ -1,0 +1,7 @@
+BlockSearchSurfaceOptions
+===============================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.BlockSearchSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

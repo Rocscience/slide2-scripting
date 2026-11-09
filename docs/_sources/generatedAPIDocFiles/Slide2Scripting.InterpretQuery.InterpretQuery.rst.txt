@@ -1,0 +1,7 @@
+InterpretQuery
+====================================================
+
+.. automodule:: Slide2Scripting.InterpretQuery.InterpretQuery
+   :members:
+   :show-inheritance:
+   :undoc-members:

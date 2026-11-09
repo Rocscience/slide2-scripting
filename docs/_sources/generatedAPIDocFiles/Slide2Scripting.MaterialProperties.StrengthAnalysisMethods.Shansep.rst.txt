@@ -1,0 +1,7 @@
+Shansep
+=========================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Shansep
+   :members:
+   :show-inheritance:
+   :undoc-members:

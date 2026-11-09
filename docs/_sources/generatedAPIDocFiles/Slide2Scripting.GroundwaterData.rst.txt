@@ -1,0 +1,16 @@
+GroundwaterData
+=======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.GroundwaterData.GroundwaterData
+   Slide2Scripting.GroundwaterData.export_util
+   Slide2Scripting.GroundwaterData.types
+
+
+.. automodule:: Slide2Scripting.GroundwaterData
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,14 @@
+Utilities
+=================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.Utilities.ColorPicker
+
+
+.. automodule:: Slide2Scripting.Utilities
+   :members:
+   :show-inheritance:
+   :undoc-members:

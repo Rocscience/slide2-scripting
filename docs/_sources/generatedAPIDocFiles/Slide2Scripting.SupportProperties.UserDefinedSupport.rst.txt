@@ -1,0 +1,7 @@
+UserDefinedSupport
+===========================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.UserDefinedSupport
+   :members:
+   :show-inheritance:
+   :undoc-members:

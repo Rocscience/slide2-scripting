@@ -1,0 +1,14 @@
+Material Properties: Snowden Anisotropic Example
+================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties snowden anisotropic:
+.. literalinclude:: ../../example_code/snowden_anisotropic_example.py
+   :language: python
+   :caption: Code Snippet: Snowden Anisotropic Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/snowden_anisotropic_example_result.txt
+   :language: python

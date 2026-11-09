@@ -1,0 +1,7 @@
+common
+=====================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.common
+   :members:
+   :show-inheritance:
+   :undoc-members:

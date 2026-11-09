@@ -1,0 +1,7 @@
+SeismicLoadSettings
+==========================================
+
+.. automodule:: Slide2Scripting.SeismicLoadSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

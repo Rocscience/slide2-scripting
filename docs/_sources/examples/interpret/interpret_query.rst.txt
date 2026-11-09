@@ -1,0 +1,14 @@
+Interpret Query Example
+=======================
+
+Download the `InterpretExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/InterpretExample.slmd>`_ for this example.
+
+.. _interpret query example:
+.. literalinclude:: ../../example_code/interpret_query_example.py
+   :language: python
+   :caption: Code Snippet: Interpret Query
+
+Output
+------------------
+.. literalinclude:: ../../example_code/interpret_query_example_result.txt
+   :language: python

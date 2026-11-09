@@ -1,0 +1,7 @@
+PiezoProbabilisticStatistics
+===========================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.PiezoProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

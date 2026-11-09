@@ -1,0 +1,25 @@
+SurfaceOptions
+======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.SurfaceOptions.AutoSlopeSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.BlockSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.CuckooSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.GridSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.OptimizeSurfaceSettings
+   Slide2Scripting.SurfaceOptions.PSOSurfaceOptions
+   Slide2Scripting.SurfaceOptions.PathSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.SimulatedAnnealingSurfaceOptions
+   Slide2Scripting.SurfaceOptions.SlopeSearchSurfaceOptions
+   Slide2Scripting.SurfaceOptions.SurfaceFilters
+   Slide2Scripting.SurfaceOptions.SurfaceOptions
+   Slide2Scripting.SurfaceOptions.SurfaceTypeOptions
+
+
+.. automodule:: Slide2Scripting.SurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

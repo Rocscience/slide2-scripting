@@ -1,0 +1,7 @@
+CPTProjectSettings
+=========================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.CPTProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

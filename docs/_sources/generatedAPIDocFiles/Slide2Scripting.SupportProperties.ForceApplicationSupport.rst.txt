@@ -1,0 +1,7 @@
+ForceApplicationSupport
+================================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.ForceApplicationSupport
+   :members:
+   :show-inheritance:
+   :undoc-members:

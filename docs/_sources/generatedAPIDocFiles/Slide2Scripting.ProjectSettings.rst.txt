@@ -1,0 +1,28 @@
+ProjectSettings
+=======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.ProjectSettings.AdvancedProjectSettings
+   Slide2Scripting.ProjectSettings.BackAnalysisTensionMap
+   Slide2Scripting.ProjectSettings.CPTProjectSettings
+   Slide2Scripting.ProjectSettings.DesignStandardsProjectSettings
+   Slide2Scripting.ProjectSettings.GeneralProjectSettings
+   Slide2Scripting.ProjectSettings.GroundwaterProjectSettings
+   Slide2Scripting.ProjectSettings.MethodsProjectSettings
+   Slide2Scripting.ProjectSettings.MultiDocScenarioModel
+   Slide2Scripting.ProjectSettings.ProjectSettings
+   Slide2Scripting.ProjectSettings.RandomNumbersProjectSettings
+   Slide2Scripting.ProjectSettings.ScenariosProjectSettings
+   Slide2Scripting.ProjectSettings.SeismicProjectSettings
+   Slide2Scripting.ProjectSettings.SoilProfileProjectSettings
+   Slide2Scripting.ProjectSettings.StatisticsProjectSettings
+   Slide2Scripting.ProjectSettings.TransientProjectSettings
+
+
+.. automodule:: Slide2Scripting.ProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

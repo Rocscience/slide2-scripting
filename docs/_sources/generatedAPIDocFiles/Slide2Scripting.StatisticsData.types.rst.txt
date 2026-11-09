@@ -1,0 +1,7 @@
+types
+===========================================
+
+.. automodule:: Slide2Scripting.StatisticsData.types
+   :members:
+   :show-inheritance:
+   :undoc-members:

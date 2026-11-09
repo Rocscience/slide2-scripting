@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SeismicProjectSettings &#8212; Slide2 Scripting Reference Manual  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generatedAPIDocFiles/Slide2Scripting.ProjectSettings.SeismicProjectSettings';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SoilProfileProjectSettings" href="Slide2Scripting.ProjectSettings.SoilProfileProjectSettings.html" />
+    <link rel="prev" title="ScenariosProjectSettings" href="Slide2Scripting.ProjectSettings.ScenariosProjectSettings.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.DisplayOptions.html">DisplayOptions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html">InterpretDisplayOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.html">ModelerDisplayOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.GroundwaterData.html">GroundwaterData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.GroundwaterData.html">GroundwaterData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.InterpretData.html">InterpretData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretData.InterpretData.html">InterpretData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html">export_util</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.InterpretQuery.html">InterpretQuery</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.InterpretQuery.html">InterpretQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.graph_types.html">graph_types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Liquefaction.html">Liquefaction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Liquefaction.CPTData.html">CPTData</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.html">MaterialProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.html">StrengthAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Anisotropic.html">Anisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.BartonBandis.html">BartonBandis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.CniRockMass.html">CniRockMass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.DrainedUndrained.html">DrainedUndrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.GeneralizedHoekBrown.html">GeneralizedHoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.HoekBrown.html">HoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Hyperbolic.html">Hyperbolic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.InfiniteStrength.html">InfiniteStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.ModifiedSnowdenAnisotropic.html">ModifiedSnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.MohrCoulomb.html">MohrCoulomb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.NoStrength.html">NoStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.PowerCurve.html">PowerCurve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Shansep.html">Shansep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.SnowdenAnisotropic.html">SnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Undrained.html">Undrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.VerticalStressRatio.html">VerticalStressRatio</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.ExcessPorePressure.html">ExcessPorePressure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.HydraulicProperties.html">HydraulicProperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialProperty.html">MaterialProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialStrength.html">MaterialStrength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.RapidDrawdown.html">RapidDrawdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UnsaturatedShear.html">UnsaturatedShear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedFunctions.html">UserDefinedFunctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedWaterMethods.html">UserDefinedWaterMethods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.WaterParameters.html">WaterParameters</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.html">ProbabilisticStatistics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.HydraulicProbabilisticStatistics.html">HydraulicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.LoadProbabilisticStatistics.html">LoadProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.MaterialProbabilisticStatistics.html">MaterialProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.PiezoProbabilisticStatistics.html">PiezoProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.ProbabilisticStatistics.html">ProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.RapidDrawdownProbabilisticStatistics.html">RapidDrawdownProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SeismicProbabilisticStatistics.html">SeismicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SupportProbabilisticStatistics.html">SupportProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.TensionCrackProbabilisticStatistics.html">TensionCrackProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.WaterTableProbabilisticStatistics.html">WaterTableProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.common.html">common</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Slide2Scripting.ProjectSettings.html">ProjectSettings</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.AdvancedProjectSettings.html">AdvancedProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.BackAnalysisTensionMap.html">BackAnalysisTensionMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.CPTProjectSettings.html">CPTProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.DesignStandardsProjectSettings.html">DesignStandardsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GeneralProjectSettings.html">GeneralProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GroundwaterProjectSettings.html">GroundwaterProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MethodsProjectSettings.html">MethodsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MultiDocScenarioModel.html">MultiDocScenarioModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ProjectSettings.html">ProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.RandomNumbersProjectSettings.html">RandomNumbersProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ScenariosProjectSettings.html">ScenariosProjectSettings</a></li>
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">SeismicProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.SoilProfileProjectSettings.html">SoilProfileProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.StatisticsProjectSettings.html">StatisticsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.TransientProjectSettings.html">TransientProjectSettings</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.StatisticsData.html">StatisticsData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.StatisticsData.html">StatisticsData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SupportProperties.html">SupportProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.EndAnchored.html">EndAnchored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceApplicationSupport.html">ForceApplicationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceOrientationSupport.html">ForceOrientationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.FrictionAnchor.html">FrictionAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.Geogrid.html">Geogrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.GroutedTieback.html">GroutedTieback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.HelicalAnchor.html">HelicalAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.LaunchedSoilNail.html">LaunchedSoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.MicroPile.html">MicroPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RSPile.html">RSPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RetainingWallEFW.html">RetainingWallEFW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SoilNail.html">SoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SupportProperty.html">SupportProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.UserDefinedSupport.html">UserDefinedSupport</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.html">SurfaceOptions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.AutoSlopeSearchSurfaceOptions.html">AutoSlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.BlockSearchSurfaceOptions.html">BlockSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.CuckooSearchSurfaceOptions.html">CuckooSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.GridSearchSurfaceOptions.html">GridSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.OptimizeSurfaceSettings.html">OptimizeSurfaceSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PSOSurfaceOptions.html">PSOSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PathSearchSurfaceOptions.html">PathSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SimulatedAnnealingSurfaceOptions.html">SimulatedAnnealingSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SlopeSearchSurfaceOptions.html">SlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceFilters.html">SurfaceFilters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceOptions.html">SurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceTypeOptions.html">SurfaceTypeOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Utilities.html">Utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Utilities.ColorPicker.html">ColorPicker</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SeismicLoadSettings.html">SeismicLoadSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2InterpretModel.html">Slide2InterpretModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Interpreter.html">Slide2Interpreter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Model.html">Slide2Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Modeler.html">Slide2Modeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SlopeLimitsSettings.html">SlopeLimitsSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SupportDesigner.html">SupportDesigner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.TensionCrack.html">TensionCrack</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.html" class="nav-link">Slide2Scripting</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.ProjectSettings.html" class="nav-link">ProjectSettings</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">SeismicProjectSettings</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-Slide2Scripting.ProjectSettings.SeismicProjectSettings">
+<span id="seismicprojectsettings"></span><h1>SeismicProjectSettings<a class="headerlink" href="#module-Slide2Scripting.ProjectSettings.SeismicProjectSettings" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SeismicUndrainedMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.EFFECTIVE_STRESS">
+<span class="sig-name descname"><span class="pre">EFFECTIVE_STRESS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.EFFECTIVE_STRESS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.DUNCAN_WRIGHT_WONG_3STAGE">
+<span class="sig-name descname"><span class="pre">DUNCAN_WRIGHT_WONG_3STAGE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.DUNCAN_WRIGHT_WONG_3STAGE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.ARMY_CRP_ENG_2STAGE">
+<span class="sig-name descname"><span class="pre">ARMY_CRP_ENG_2STAGE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.ARMY_CRP_ENG_2STAGE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SeismicInterpolationMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.DUNCAN_WRIGHT_WONG">
+<span class="sig-name descname"><span class="pre">DUNCAN_WRIGHT_WONG</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.DUNCAN_WRIGHT_WONG" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.VANDENBERGE_WRIGHT">
+<span class="sig-name descname"><span class="pre">VANDENBERGE_WRIGHT</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.VANDENBERGE_WRIGHT" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">AdvancedSeismicMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.KC">
+<span class="sig-name descname"><span class="pre">KC</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.KC" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.NEWMARK">
+<span class="sig-name descname"><span class="pre">NEWMARK</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.NEWMARK" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkScalingOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.NONE">
+<span class="sig-name descname"><span class="pre">NONE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.NONE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.FACTOR">
+<span class="sig-name descname"><span class="pre">FACTOR</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.FACTOR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkSlopeDisplacementOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_ONLY">
+<span class="sig-name descname"><span class="pre">DOWNSLOPE_ONLY</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_ONLY" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_UPSLOPE">
+<span class="sig-name descname"><span class="pre">DOWNSLOPE_UPSLOPE</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_UPSLOPE" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkAccelerationOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.POSITIVE_ACCELERATIONS">
+<span class="sig-name descname"><span class="pre">POSITIVE_ACCELERATIONS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.POSITIVE_ACCELERATIONS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.NEGATIVE_ACCELERATIONS">
+<span class="sig-name descname"><span class="pre">NEGATIVE_ACCELERATIONS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.NEGATIVE_ACCELERATIONS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.AVERAGE_ACCELERATIONS">
+<span class="sig-name descname"><span class="pre">AVERAGE_ACCELERATIONS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.AVERAGE_ACCELERATIONS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.MAXIMUM_ACCELERATIONS">
+<span class="sig-name descname"><span class="pre">MAXIMUM_ACCELERATIONS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.MAXIMUM_ACCELERATIONS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.ALL_ACCELERATIONS">
+<span class="sig-name descname"><span class="pre">ALL_ACCELERATIONS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.ALL_ACCELERATIONS" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkAnalysisType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.RIGID">
+<span class="sig-name descname"><span class="pre">RIGID</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.RIGID" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.COUPLED">
+<span class="sig-name descname"><span class="pre">COUPLED</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.COUPLED" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.DECOUPLED">
+<span class="sig-name descname"><span class="pre">DECOUPLED</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.DECOUPLED" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.ALL">
+<span class="sig-name descname"><span class="pre">ALL</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.ALL" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.LINEAR_ELASTIC">
+<span class="sig-name descname"><span class="pre">LINEAR_ELASTIC</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.LINEAR_ELASTIC" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.EQUIVALENT_LINEAR">
+<span class="sig-name descname"><span class="pre">EQUIVALENT_LINEAR</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.EQUIVALENT_LINEAR" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SeismicRecordPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">acceleration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">NewmarkAnalysisSettings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings"><span class="pre">SeismicProjectSettings</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Newmark analysis settings sub-property. Used when advanced_seismic_method is SL_ADVANCED_SEISMIC_NEWMARK.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityAbove">
+<span class="sig-name descname"><span class="pre">getShearWaveVelocityAbove</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityAbove" title="Link to this definition">#</a></dt>
+<dd><p>Get the shear wave velocity above (m/s or ft/s per units).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityAbove">
+<span class="sig-name descname"><span class="pre">setShearWaveVelocityAbove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">velocity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityAbove" title="Link to this definition">#</a></dt>
+<dd><p>Set the shear wave velocity above.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityBelow">
+<span class="sig-name descname"><span class="pre">getShearWaveVelocityBelow</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityBelow" title="Link to this definition">#</a></dt>
+<dd><p>Get the shear wave velocity below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityBelow">
+<span class="sig-name descname"><span class="pre">setShearWaveVelocityBelow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">velocity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityBelow" title="Link to this definition">#</a></dt>
+<dd><p>Set the shear wave velocity below.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSeismicRecord">
+<span class="sig-name descname"><span class="pre">getSeismicRecord</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint"><span class="pre">SeismicRecordPoint</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSeismicRecord" title="Link to this definition">#</a></dt>
+<dd><p>Get the seismic record as list of (time, acceleration) pairs in seconds and g.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSeismicRecord">
+<span class="sig-name descname"><span class="pre">setSeismicRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint"><span class="pre">SeismicRecordPoint</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSeismicRecord" title="Link to this definition">#</a></dt>
+<dd><p>Set the seismic record from list of (time, acceleration) pairs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScaleFactor">
+<span class="sig-name descname"><span class="pre">getScaleFactor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScaleFactor" title="Link to this definition">#</a></dt>
+<dd><p>Get the scale factor for the seismic record.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScaleFactor">
+<span class="sig-name descname"><span class="pre">setScaleFactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">factor</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScaleFactor" title="Link to this definition">#</a></dt>
+<dd><p>Set the scale factor for the seismic record.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getDampingRatio">
+<span class="sig-name descname"><span class="pre">getDampingRatio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getDampingRatio" title="Link to this definition">#</a></dt>
+<dd><p>Get the damping ratio (percent, e.g. 5 = 5%).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setDampingRatio">
+<span class="sig-name descname"><span class="pre">setDampingRatio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setDampingRatio" title="Link to this definition">#</a></dt>
+<dd><p>Set the damping ratio (percent).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getReferenceStrain">
+<span class="sig-name descname"><span class="pre">getReferenceStrain</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getReferenceStrain" title="Link to this definition">#</a></dt>
+<dd><p>Get the reference strain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setReferenceStrain">
+<span class="sig-name descname"><span class="pre">setReferenceStrain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">strain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setReferenceStrain" title="Link to this definition">#</a></dt>
+<dd><p>Set the reference strain.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScalingOption">
+<span class="sig-name descname"><span class="pre">getScalingOption</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption"><span class="pre">NewmarkScalingOption</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScalingOption" title="Link to this definition">#</a></dt>
+<dd><p>Get the scaling option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScalingOption">
+<span class="sig-name descname"><span class="pre">setScalingOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption"><span class="pre">NewmarkScalingOption</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScalingOption" title="Link to this definition">#</a></dt>
+<dd><p>Set the scaling option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSlopeDisplacementOption">
+<span class="sig-name descname"><span class="pre">getSlopeDisplacementOption</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption"><span class="pre">NewmarkSlopeDisplacementOption</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSlopeDisplacementOption" title="Link to this definition">#</a></dt>
+<dd><p>Get the slope displacement option (downslope only vs downslope and upslope).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSlopeDisplacementOption">
+<span class="sig-name descname"><span class="pre">setSlopeDisplacementOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption"><span class="pre">NewmarkSlopeDisplacementOption</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSlopeDisplacementOption" title="Link to this definition">#</a></dt>
+<dd><p>Set the slope displacement option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAccelerationOption">
+<span class="sig-name descname"><span class="pre">getAccelerationOption</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption"><span class="pre">NewmarkAccelerationOption</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAccelerationOption" title="Link to this definition">#</a></dt>
+<dd><p>Get the acceleration option (positive, negative, average, maximum, or all).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAccelerationOption">
+<span class="sig-name descname"><span class="pre">setAccelerationOption</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">option</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption"><span class="pre">NewmarkAccelerationOption</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAccelerationOption" title="Link to this definition">#</a></dt>
+<dd><p>Set the acceleration option.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAnalysisType">
+<span class="sig-name descname"><span class="pre">getAnalysisType</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType"><span class="pre">NewmarkAnalysisType</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAnalysisType" title="Link to this definition">#</a></dt>
+<dd><p>Get the analysis type (rigid, coupled, decoupled, or all).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAnalysisType">
+<span class="sig-name descname"><span class="pre">setAnalysisType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">analysis_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType"><span class="pre">NewmarkAnalysisType</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAnalysisType" title="Link to this definition">#</a></dt>
+<dd><p>Set the analysis type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSoilModel">
+<span class="sig-name descname"><span class="pre">getSoilModel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSoilModel" title="Link to this definition">#</a></dt>
+<dd><p>Get whether to use linear elastic model (vs equivalent linear).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSoilModel">
+<span class="sig-name descname"><span class="pre">setSoilModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">soil_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSoilModel" title="Link to this definition">#</a></dt>
+<dd><p>Set whether to use linear elastic model.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SeismicProjectSettings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Examples:
+<a class="reference internal" href="../examples/project_settings/seismic_project_settings.html#project-settings-seismic"><span class="std std-ref">Code Snippet: Seismic Example</span></a></p>
+<p>Seismic project settings for the model.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseStagedPseudoStaticStrength">
+<span class="sig-name descname"><span class="pre">getUseStagedPseudoStaticStrength</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseStagedPseudoStaticStrength" title="Link to this definition">#</a></dt>
+<dd><p>Get whether staged pseudostatic strength is enabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseStagedPseudoStaticStrength">
+<span class="sig-name descname"><span class="pre">setUseStagedPseudoStaticStrength</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseStagedPseudoStaticStrength" title="Link to this definition">#</a></dt>
+<dd><p>Set whether staged pseudostatic strength is enabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicUndrainedMethod">
+<span class="sig-name descname"><span class="pre">getSeismicUndrainedMethod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod"><span class="pre">SeismicUndrainedMethod</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicUndrainedMethod" title="Link to this definition">#</a></dt>
+<dd><p>Get the seismic undrained method (Effective Stress, Duncan-Wright-Wong, etc.).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicUndrainedMethod">
+<span class="sig-name descname"><span class="pre">setSeismicUndrainedMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod"><span class="pre">SeismicUndrainedMethod</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicUndrainedMethod" title="Link to this definition">#</a></dt>
+<dd><p>Set the seismic undrained method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicInterpolationMethod">
+<span class="sig-name descname"><span class="pre">getSeismicInterpolationMethod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod"><span class="pre">SeismicInterpolationMethod</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicInterpolationMethod" title="Link to this definition">#</a></dt>
+<dd><p>Get the seismic interpolation method (for Duncan-Wright-Wong 3-stage).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicInterpolationMethod">
+<span class="sig-name descname"><span class="pre">setSeismicInterpolationMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod"><span class="pre">SeismicInterpolationMethod</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicInterpolationMethod" title="Link to this definition">#</a></dt>
+<dd><p>Set the seismic interpolation method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseAdvancedSeismicAnalysis">
+<span class="sig-name descname"><span class="pre">getUseAdvancedSeismicAnalysis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseAdvancedSeismicAnalysis" title="Link to this definition">#</a></dt>
+<dd><p>Get whether advanced seismic analysis (Kc or Newmark) is enabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseAdvancedSeismicAnalysis">
+<span class="sig-name descname"><span class="pre">setUseAdvancedSeismicAnalysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseAdvancedSeismicAnalysis" title="Link to this definition">#</a></dt>
+<dd><p>Set whether advanced seismic analysis is enabled.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getAdvancedSeismicMethod">
+<span class="sig-name descname"><span class="pre">getAdvancedSeismicMethod</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod"><span class="pre">AdvancedSeismicMethod</span></a></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getAdvancedSeismicMethod" title="Link to this definition">#</a></dt>
+<dd><p>Get the advanced seismic method (Kc or Newmark).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setAdvancedSeismicMethod">
+<span class="sig-name descname"><span class="pre">setAdvancedSeismicMethod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod" title="Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod"><span class="pre">AdvancedSeismicMethod</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setAdvancedSeismicMethod" title="Link to this definition">#</a></dt>
+<dd><p>Set the advanced seismic method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getTargetFactorOfSafety">
+<span class="sig-name descname"><span class="pre">getTargetFactorOfSafety</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getTargetFactorOfSafety" title="Link to this definition">#</a></dt>
+<dd><p>Get the target factor of safety (when using Kc method).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setTargetFactorOfSafety">
+<span class="sig-name descname"><span class="pre">setTargetFactorOfSafety</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setTargetFactorOfSafety" title="Link to this definition">#</a></dt>
+<dd><p>Set the target factor of safety.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Slide2Scripting.ProjectSettings.ScenariosProjectSettings.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">ScenariosProjectSettings</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Slide2Scripting.ProjectSettings.SoilProfileProjectSettings.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">SoilProfileProjectSettings</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod"><code class="docutils literal notranslate"><span class="pre">SeismicUndrainedMethod</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.EFFECTIVE_STRESS"><code class="docutils literal notranslate"><span class="pre">SeismicUndrainedMethod.EFFECTIVE_STRESS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.DUNCAN_WRIGHT_WONG_3STAGE"><code class="docutils literal notranslate"><span class="pre">SeismicUndrainedMethod.DUNCAN_WRIGHT_WONG_3STAGE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicUndrainedMethod.ARMY_CRP_ENG_2STAGE"><code class="docutils literal notranslate"><span class="pre">SeismicUndrainedMethod.ARMY_CRP_ENG_2STAGE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod"><code class="docutils literal notranslate"><span class="pre">SeismicInterpolationMethod</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.DUNCAN_WRIGHT_WONG"><code class="docutils literal notranslate"><span class="pre">SeismicInterpolationMethod.DUNCAN_WRIGHT_WONG</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicInterpolationMethod.VANDENBERGE_WRIGHT"><code class="docutils literal notranslate"><span class="pre">SeismicInterpolationMethod.VANDENBERGE_WRIGHT</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod"><code class="docutils literal notranslate"><span class="pre">AdvancedSeismicMethod</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.KC"><code class="docutils literal notranslate"><span class="pre">AdvancedSeismicMethod.KC</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.AdvancedSeismicMethod.NEWMARK"><code class="docutils literal notranslate"><span class="pre">AdvancedSeismicMethod.NEWMARK</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption"><code class="docutils literal notranslate"><span class="pre">NewmarkScalingOption</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.NONE"><code class="docutils literal notranslate"><span class="pre">NewmarkScalingOption.NONE</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkScalingOption.FACTOR"><code class="docutils literal notranslate"><span class="pre">NewmarkScalingOption.FACTOR</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption"><code class="docutils literal notranslate"><span class="pre">NewmarkSlopeDisplacementOption</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_ONLY"><code class="docutils literal notranslate"><span class="pre">NewmarkSlopeDisplacementOption.DOWNSLOPE_ONLY</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkSlopeDisplacementOption.DOWNSLOPE_UPSLOPE"><code class="docutils literal notranslate"><span class="pre">NewmarkSlopeDisplacementOption.DOWNSLOPE_UPSLOPE</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.POSITIVE_ACCELERATIONS"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption.POSITIVE_ACCELERATIONS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.NEGATIVE_ACCELERATIONS"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption.NEGATIVE_ACCELERATIONS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.AVERAGE_ACCELERATIONS"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption.AVERAGE_ACCELERATIONS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.MAXIMUM_ACCELERATIONS"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption.MAXIMUM_ACCELERATIONS</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAccelerationOption.ALL_ACCELERATIONS"><code class="docutils literal notranslate"><span class="pre">NewmarkAccelerationOption.ALL_ACCELERATIONS</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisType</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.RIGID"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisType.RIGID</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.COUPLED"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisType.COUPLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.DECOUPLED"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisType.DECOUPLED</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisType.ALL"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisType.ALL</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.LINEAR_ELASTIC"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel.LINEAR_ELASTIC</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisCoupledDecoupledSoilModel.EQUIVALENT_LINEAR"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisCoupledDecoupledSoilModel.EQUIVALENT_LINEAR</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicRecordPoint"><code class="docutils literal notranslate"><span class="pre">SeismicRecordPoint</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityAbove"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getShearWaveVelocityAbove()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityAbove"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setShearWaveVelocityAbove()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getShearWaveVelocityBelow"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getShearWaveVelocityBelow()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setShearWaveVelocityBelow"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setShearWaveVelocityBelow()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSeismicRecord"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getSeismicRecord()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSeismicRecord"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setSeismicRecord()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScaleFactor"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getScaleFactor()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScaleFactor"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setScaleFactor()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getDampingRatio"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getDampingRatio()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setDampingRatio"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setDampingRatio()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getReferenceStrain"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getReferenceStrain()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setReferenceStrain"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setReferenceStrain()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getScalingOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getScalingOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setScalingOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setScalingOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSlopeDisplacementOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getSlopeDisplacementOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSlopeDisplacementOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setSlopeDisplacementOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAccelerationOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getAccelerationOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAccelerationOption"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setAccelerationOption()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getAnalysisType"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getAnalysisType()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setAnalysisType"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setAnalysisType()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.getSoilModel"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.getSoilModel()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.NewmarkAnalysisSettings.setSoilModel"><code class="docutils literal notranslate"><span class="pre">NewmarkAnalysisSettings.setSoilModel()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseStagedPseudoStaticStrength"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getUseStagedPseudoStaticStrength()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseStagedPseudoStaticStrength"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setUseStagedPseudoStaticStrength()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicUndrainedMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getSeismicUndrainedMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicUndrainedMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setSeismicUndrainedMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getSeismicInterpolationMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getSeismicInterpolationMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setSeismicInterpolationMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setSeismicInterpolationMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getUseAdvancedSeismicAnalysis"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getUseAdvancedSeismicAnalysis()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setUseAdvancedSeismicAnalysis"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setUseAdvancedSeismicAnalysis()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getAdvancedSeismicMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getAdvancedSeismicMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setAdvancedSeismicMethod"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setAdvancedSeismicMethod()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.getTargetFactorOfSafety"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.getTargetFactorOfSafety()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.ProjectSettings.SeismicProjectSettings.SeismicProjectSettings.setTargetFactorOfSafety"><code class="docutils literal notranslate"><span class="pre">SeismicProjectSettings.setTargetFactorOfSafety()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/generatedAPIDocFiles/Slide2Scripting.ProjectSettings.SeismicProjectSettings.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Rocscience Inc..
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.2.0.
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+BackAnalysisTensionMap
+=============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.BackAnalysisTensionMap
+   :members:
+   :show-inheritance:
+   :undoc-members:

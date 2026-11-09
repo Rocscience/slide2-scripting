@@ -1,0 +1,7 @@
+RandomNumbersProjectSettings
+===================================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.RandomNumbersProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

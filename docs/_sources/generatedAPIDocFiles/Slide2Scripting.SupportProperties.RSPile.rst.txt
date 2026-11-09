@@ -1,0 +1,7 @@
+RSPile
+===============================================
+
+.. automodule:: Slide2Scripting.SupportProperties.RSPile
+   :members:
+   :show-inheritance:
+   :undoc-members:

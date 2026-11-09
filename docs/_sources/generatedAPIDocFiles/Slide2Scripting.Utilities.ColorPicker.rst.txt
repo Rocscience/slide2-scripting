@@ -1,0 +1,7 @@
+ColorPicker
+============================================
+
+.. automodule:: Slide2Scripting.Utilities.ColorPicker
+   :members:
+   :show-inheritance:
+   :undoc-members:

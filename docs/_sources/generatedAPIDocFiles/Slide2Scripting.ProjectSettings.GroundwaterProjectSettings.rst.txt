@@ -1,0 +1,7 @@
+GroundwaterProjectSettings
+=================================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.GroundwaterProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:
