@@ -1,0 +1,14 @@
+Material Properties: Power Curve Example
+========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties power curve:
+.. literalinclude:: ../../example_code/power_curve_example.py
+   :language: python
+   :caption: Code Snippet: Power Curve Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/power_curve_example_result.txt
+   :language: python

@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ModelerDisplayOptions &#8212; Slide2 Scripting Reference Manual  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'generatedAPIDocFiles/Slide2Scripting.DisplayOptions.ModelerDisplayOptions';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GroundwaterData" href="Slide2Scripting.GroundwaterData.html" />
+    <link rel="prev" title="InterpretDisplayOptions" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Slide2 Scripting Reference Manual  documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="Slide2Scripting.html">
+    Slide2Scripting
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples.html">
+    Python Script Examples
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Slide2Scripting.DisplayOptions.html">DisplayOptions</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html">InterpretDisplayOptions</a></li>
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">ModelerDisplayOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.GroundwaterData.html">GroundwaterData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.GroundwaterData.html">GroundwaterData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.GroundwaterData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.InterpretData.html">InterpretData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretData.InterpretData.html">InterpretData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretData.export_util.html">export_util</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.InterpretQuery.html">InterpretQuery</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.InterpretQuery.html">InterpretQuery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.graph_types.html">graph_types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.InterpretQuery.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Liquefaction.html">Liquefaction</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Liquefaction.CPTData.html">CPTData</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.html">MaterialProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.html">StrengthAnalysisMethods</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Anisotropic.html">Anisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.BartonBandis.html">BartonBandis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.CniRockMass.html">CniRockMass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.DrainedUndrained.html">DrainedUndrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.GeneralizedHoekBrown.html">GeneralizedHoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.HoekBrown.html">HoekBrown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Hyperbolic.html">Hyperbolic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.InfiniteStrength.html">InfiniteStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.ModifiedSnowdenAnisotropic.html">ModifiedSnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.MohrCoulomb.html">MohrCoulomb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.NoStrength.html">NoStrength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.PowerCurve.html">PowerCurve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Shansep.html">Shansep</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.SnowdenAnisotropic.html">SnowdenAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Undrained.html">Undrained</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.VerticalStressRatio.html">VerticalStressRatio</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.ExcessPorePressure.html">ExcessPorePressure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.HydraulicProperties.html">HydraulicProperties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialProperty.html">MaterialProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.MaterialStrength.html">MaterialStrength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.RapidDrawdown.html">RapidDrawdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UnsaturatedShear.html">UnsaturatedShear</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedFunctions.html">UserDefinedFunctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.UserDefinedWaterMethods.html">UserDefinedWaterMethods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.MaterialProperties.WaterParameters.html">WaterParameters</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.html">ProbabilisticStatistics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.HydraulicProbabilisticStatistics.html">HydraulicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.LoadProbabilisticStatistics.html">LoadProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.MaterialProbabilisticStatistics.html">MaterialProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.PiezoProbabilisticStatistics.html">PiezoProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.ProbabilisticStatistics.html">ProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.RapidDrawdownProbabilisticStatistics.html">RapidDrawdownProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SeismicProbabilisticStatistics.html">SeismicProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.SupportProbabilisticStatistics.html">SupportProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.TensionCrackProbabilisticStatistics.html">TensionCrackProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.WaterTableProbabilisticStatistics.html">WaterTableProbabilisticStatistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.common.html">common</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProbabilisticStatistics.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.ProjectSettings.html">ProjectSettings</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.AdvancedProjectSettings.html">AdvancedProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.BackAnalysisTensionMap.html">BackAnalysisTensionMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.CPTProjectSettings.html">CPTProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.DesignStandardsProjectSettings.html">DesignStandardsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GeneralProjectSettings.html">GeneralProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.GroundwaterProjectSettings.html">GroundwaterProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MethodsProjectSettings.html">MethodsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.MultiDocScenarioModel.html">MultiDocScenarioModel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ProjectSettings.html">ProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.RandomNumbersProjectSettings.html">RandomNumbersProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.ScenariosProjectSettings.html">ScenariosProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.SeismicProjectSettings.html">SeismicProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.SoilProfileProjectSettings.html">SoilProfileProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.StatisticsProjectSettings.html">StatisticsProjectSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.ProjectSettings.TransientProjectSettings.html">TransientProjectSettings</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.StatisticsData.html">StatisticsData</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.StatisticsData.html">StatisticsData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.export_util.html">export_util</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.StatisticsData.types.html">types</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SupportProperties.html">SupportProperties</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.EndAnchored.html">EndAnchored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceApplicationSupport.html">ForceApplicationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.ForceOrientationSupport.html">ForceOrientationSupport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.FrictionAnchor.html">FrictionAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.Geogrid.html">Geogrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.GroutedTieback.html">GroutedTieback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.HelicalAnchor.html">HelicalAnchor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.LaunchedSoilNail.html">LaunchedSoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.MicroPile.html">MicroPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RSPile.html">RSPile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.RetainingWallEFW.html">RetainingWallEFW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SoilNail.html">SoilNail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.SupportProperty.html">SupportProperty</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SupportProperties.UserDefinedSupport.html">UserDefinedSupport</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.html">SurfaceOptions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.AutoSlopeSearchSurfaceOptions.html">AutoSlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.BlockSearchSurfaceOptions.html">BlockSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.CuckooSearchSurfaceOptions.html">CuckooSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.GridSearchSurfaceOptions.html">GridSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.OptimizeSurfaceSettings.html">OptimizeSurfaceSettings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PSOSurfaceOptions.html">PSOSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.PathSearchSurfaceOptions.html">PathSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SimulatedAnnealingSurfaceOptions.html">SimulatedAnnealingSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SlopeSearchSurfaceOptions.html">SlopeSearchSurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceFilters.html">SurfaceFilters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceOptions.html">SurfaceOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.SurfaceOptions.SurfaceTypeOptions.html">SurfaceTypeOptions</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="Slide2Scripting.Utilities.html">Utilities</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="Slide2Scripting.Utilities.ColorPicker.html">ColorPicker</a></li>
+</ul>
+</details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SeismicLoadSettings.html">SeismicLoadSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2InterpretModel.html">Slide2InterpretModel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Interpreter.html">Slide2Interpreter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Model.html">Slide2Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.Slide2Modeler.html">Slide2Modeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SlopeLimitsSettings.html">SlopeLimitsSettings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.SupportDesigner.html">SupportDesigner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Slide2Scripting.TensionCrack.html">TensionCrack</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.html" class="nav-link">Slide2Scripting</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="Slide2Scripting.DisplayOptions.html" class="nav-link">DisplayOptions</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">ModelerDisplayOptions</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-Slide2Scripting.DisplayOptions.ModelerDisplayOptions">
+<span id="modelerdisplayoptions"></span><h1>ModelerDisplayOptions<a class="headerlink" href="#module-Slide2Scripting.DisplayOptions.ModelerDisplayOptions" title="Link to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ModelerDisplayOptions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Client</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Examples:
+<a class="reference internal" href="../examples/display/modeler_display_options.html#id1"><span class="std std-ref">Code Snippet: Modeler Display Options</span></a></p>
+<p>Modeler display options: general, colors, boundary visibility, drawing, ruler, and ponded water style.
+Color fields are <code class="docutils literal notranslate"><span class="pre">int32</span></code> in the API (Windows COLORREF values, typically <code class="docutils literal notranslate"><span class="pre">0x00BBGGRR</span></code>).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProperties">
+<span class="sig-name descname"><span class="pre">getProperties</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ModelerDisplayOptionsProperties</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProperties" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProperties">
+<span class="sig-name descname"><span class="pre">setProperties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">props</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ModelerDisplayOptionsProperties</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProperties" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowCoordinatesOfLastVertex">
+<span class="sig-name descname"><span class="pre">getShowCoordinatesOfLastVertex</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowCoordinatesOfLastVertex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowCoordinatesOfLastVertex">
+<span class="sig-name descname"><span class="pre">setShowCoordinatesOfLastVertex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowCoordinatesOfLastVertex" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusAngles">
+<span class="sig-name descname"><span class="pre">getShowSegmentLengthRadiusAngles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusAngles" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusAngles">
+<span class="sig-name descname"><span class="pre">setShowSegmentLengthRadiusAngles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusAngles" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusRatio">
+<span class="sig-name descname"><span class="pre">getShowSegmentLengthRadiusRatio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusRatio" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusRatio">
+<span class="sig-name descname"><span class="pre">setShowSegmentLengthRadiusRatio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusRatio" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowGridPointsOnSearchGrid">
+<span class="sig-name descname"><span class="pre">getShowGridPointsOnSearchGrid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowGridPointsOnSearchGrid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowGridPointsOnSearchGrid">
+<span class="sig-name descname"><span class="pre">setShowGridPointsOnSearchGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowGridPointsOnSearchGrid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getMaterialBoundaryColour">
+<span class="sig-name descname"><span class="pre">getMaterialBoundaryColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getMaterialBoundaryColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setMaterialBoundaryColour">
+<span class="sig-name descname"><span class="pre">setMaterialBoundaryColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setMaterialBoundaryColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getExternalBoundaryColour">
+<span class="sig-name descname"><span class="pre">getExternalBoundaryColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getExternalBoundaryColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setExternalBoundaryColour">
+<span class="sig-name descname"><span class="pre">setExternalBoundaryColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setExternalBoundaryColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProfileColour">
+<span class="sig-name descname"><span class="pre">getProfileColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProfileColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProfileColour">
+<span class="sig-name descname"><span class="pre">setProfileColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProfileColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getTensionCrackColour">
+<span class="sig-name descname"><span class="pre">getTensionCrackColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getTensionCrackColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setTensionCrackColour">
+<span class="sig-name descname"><span class="pre">setTensionCrackColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setTensionCrackColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPiezoLineColour">
+<span class="sig-name descname"><span class="pre">getPiezoLineColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPiezoLineColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPiezoLineColour">
+<span class="sig-name descname"><span class="pre">setPiezoLineColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPiezoLineColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWaterTableColour">
+<span class="sig-name descname"><span class="pre">getWaterTableColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWaterTableColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWaterTableColour">
+<span class="sig-name descname"><span class="pre">setWaterTableColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWaterTableColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getAnisotropicSurfaceColour">
+<span class="sig-name descname"><span class="pre">getAnisotropicSurfaceColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getAnisotropicSurfaceColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setAnisotropicSurfaceColour">
+<span class="sig-name descname"><span class="pre">setAnisotropicSurfaceColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setAnisotropicSurfaceColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.get3DAnisotropicSurfaceColour">
+<span class="sig-name descname"><span class="pre">get3DAnisotropicSurfaceColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.get3DAnisotropicSurfaceColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.set3DAnisotropicSurfaceColour">
+<span class="sig-name descname"><span class="pre">set3DAnisotropicSurfaceColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.set3DAnisotropicSurfaceColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWeakLayerColour">
+<span class="sig-name descname"><span class="pre">getWeakLayerColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWeakLayerColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWeakLayerColour">
+<span class="sig-name descname"><span class="pre">setWeakLayerColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWeakLayerColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDamageRegionColour">
+<span class="sig-name descname"><span class="pre">getDamageRegionColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDamageRegionColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDamageRegionColour">
+<span class="sig-name descname"><span class="pre">setDamageRegionColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDamageRegionColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getElementsColour">
+<span class="sig-name descname"><span class="pre">getElementsColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getElementsColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setElementsColour">
+<span class="sig-name descname"><span class="pre">setElementsColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setElementsColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowMaterialBoundaries">
+<span class="sig-name descname"><span class="pre">getShowMaterialBoundaries</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowMaterialBoundaries" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowMaterialBoundaries">
+<span class="sig-name descname"><span class="pre">setShowMaterialBoundaries</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowMaterialBoundaries" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowProfiles">
+<span class="sig-name descname"><span class="pre">getShowProfiles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowProfiles" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowProfiles">
+<span class="sig-name descname"><span class="pre">setShowProfiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowProfiles" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowExternalBoundary">
+<span class="sig-name descname"><span class="pre">getShowExternalBoundary</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowExternalBoundary" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowExternalBoundary">
+<span class="sig-name descname"><span class="pre">setShowExternalBoundary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowExternalBoundary" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowTensionCracks">
+<span class="sig-name descname"><span class="pre">getShowTensionCracks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowTensionCracks" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowTensionCracks">
+<span class="sig-name descname"><span class="pre">setShowTensionCracks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowTensionCracks" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterTables">
+<span class="sig-name descname"><span class="pre">getShowWaterTables</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterTables" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterTables">
+<span class="sig-name descname"><span class="pre">setShowWaterTables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterTables" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPiezoLines">
+<span class="sig-name descname"><span class="pre">getShowPiezoLines</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPiezoLines" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPiezoLines">
+<span class="sig-name descname"><span class="pre">setShowPiezoLines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPiezoLines" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWeakLayers">
+<span class="sig-name descname"><span class="pre">getShowWeakLayers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWeakLayers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWeakLayers">
+<span class="sig-name descname"><span class="pre">setShowWeakLayers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWeakLayers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowAnisotropicSurfaces">
+<span class="sig-name descname"><span class="pre">getShowAnisotropicSurfaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowAnisotropicSurfaces" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowAnisotropicSurfaces">
+<span class="sig-name descname"><span class="pre">setShowAnisotropicSurfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowAnisotropicSurfaces" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShow3DAnisotropicSurfaces">
+<span class="sig-name descname"><span class="pre">getShow3DAnisotropicSurfaces</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShow3DAnisotropicSurfaces" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShow3DAnisotropicSurfaces">
+<span class="sig-name descname"><span class="pre">setShow3DAnisotropicSurfaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShow3DAnisotropicSurfaces" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegions">
+<span class="sig-name descname"><span class="pre">getShowDamageRegions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegions" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegions">
+<span class="sig-name descname"><span class="pre">setShowDamageRegions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegions" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSupportFacePlates">
+<span class="sig-name descname"><span class="pre">getShowSupportFacePlates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSupportFacePlates" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSupportFacePlates">
+<span class="sig-name descname"><span class="pre">setShowSupportFacePlates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSupportFacePlates" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoreholes">
+<span class="sig-name descname"><span class="pre">getShowBoreholes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoreholes" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoreholes">
+<span class="sig-name descname"><span class="pre">setShowBoreholes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoreholes" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawWeakLayerByMaterial">
+<span class="sig-name descname"><span class="pre">getDrawWeakLayerByMaterial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawWeakLayerByMaterial" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawWeakLayerByMaterial">
+<span class="sig-name descname"><span class="pre">setDrawWeakLayerByMaterial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawWeakLayerByMaterial" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryVertices">
+<span class="sig-name descname"><span class="pre">getShowBoundaryVertices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryVertices" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryVertices">
+<span class="sig-name descname"><span class="pre">setShowBoundaryVertices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryVertices" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegionsHatch">
+<span class="sig-name descname"><span class="pre">getShowDamageRegionsHatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegionsHatch" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegionsHatch">
+<span class="sig-name descname"><span class="pre">setShowDamageRegionsHatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegionsHatch" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLineWidth">
+<span class="sig-name descname"><span class="pre">getLineWidth</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLineWidth" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLineWidth">
+<span class="sig-name descname"><span class="pre">setLineWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLineWidth" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLoadScalingDisplayFactor">
+<span class="sig-name descname"><span class="pre">getLoadScalingDisplayFactor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLoadScalingDisplayFactor" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLoadScalingDisplayFactor">
+<span class="sig-name descname"><span class="pre">setLoadScalingDisplayFactor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLoadScalingDisplayFactor" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getScaleDisplayItemsOnZoom">
+<span class="sig-name descname"><span class="pre">getScaleDisplayItemsOnZoom</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getScaleDisplayItemsOnZoom" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setScaleDisplayItemsOnZoom">
+<span class="sig-name descname"><span class="pre">setScaleDisplayItemsOnZoom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setScaleDisplayItemsOnZoom" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscretizations">
+<span class="sig-name descname"><span class="pre">getShowDiscretizations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscretizations" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscretizations">
+<span class="sig-name descname"><span class="pre">setShowDiscretizations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscretizations" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawMidsideNodes">
+<span class="sig-name descname"><span class="pre">getDrawMidsideNodes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawMidsideNodes" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawMidsideNodes">
+<span class="sig-name descname"><span class="pre">setDrawMidsideNodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawMidsideNodes" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowNodeNumbers">
+<span class="sig-name descname"><span class="pre">getShowNodeNumbers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowNodeNumbers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowNodeNumbers">
+<span class="sig-name descname"><span class="pre">setShowNodeNumbers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowNodeNumbers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElementNumbers">
+<span class="sig-name descname"><span class="pre">getShowElementNumbers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElementNumbers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElementNumbers">
+<span class="sig-name descname"><span class="pre">setShowElementNumbers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElementNumbers" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditions">
+<span class="sig-name descname"><span class="pre">getShowBoundaryConditions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditions" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditions">
+<span class="sig-name descname"><span class="pre">setShowBoundaryConditions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditions" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditionValues">
+<span class="sig-name descname"><span class="pre">getShowBoundaryConditionValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditionValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditionValues">
+<span class="sig-name descname"><span class="pre">setShowBoundaryConditionValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditionValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElements">
+<span class="sig-name descname"><span class="pre">getShowElements</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElements" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElements">
+<span class="sig-name descname"><span class="pre">setShowElements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElements" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPondedWater">
+<span class="sig-name descname"><span class="pre">getShowPondedWater</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPondedWater" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPondedWater">
+<span class="sig-name descname"><span class="pre">setShowPondedWater</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPondedWater" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGrid">
+<span class="sig-name descname"><span class="pre">getShowWaterPressureGrid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGrid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGrid">
+<span class="sig-name descname"><span class="pre">setShowWaterPressureGrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGrid" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGridValues">
+<span class="sig-name descname"><span class="pre">getShowWaterPressureGridValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGridValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGridValues">
+<span class="sig-name descname"><span class="pre">setShowWaterPressureGridValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGridValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthGridValues">
+<span class="sig-name descname"><span class="pre">getShowDiscreteStrengthGridValues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthGridValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthGridValues">
+<span class="sig-name descname"><span class="pre">setShowDiscreteStrengthGridValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthGridValues" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthSymbols">
+<span class="sig-name descname"><span class="pre">getShowDiscreteStrengthSymbols</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthSymbols" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthSymbols">
+<span class="sig-name descname"><span class="pre">setShowDiscreteStrengthSymbols</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthSymbols" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseDiscreteStrengthTransparentTextBackground">
+<span class="sig-name descname"><span class="pre">getUseDiscreteStrengthTransparentTextBackground</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseDiscreteStrengthTransparentTextBackground" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseDiscreteStrengthTransparentTextBackground">
+<span class="sig-name descname"><span class="pre">setUseDiscreteStrengthTransparentTextBackground</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseDiscreteStrengthTransparentTextBackground" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSoilProfile">
+<span class="sig-name descname"><span class="pre">getShowSoilProfile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSoilProfile" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSoilProfile">
+<span class="sig-name descname"><span class="pre">setShowSoilProfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSoilProfile" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowRuler">
+<span class="sig-name descname"><span class="pre">getShowRuler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowRuler" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowRuler">
+<span class="sig-name descname"><span class="pre">setShowRuler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowRuler" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseBlackWhiteRulerBackground">
+<span class="sig-name descname"><span class="pre">getUseBlackWhiteRulerBackground</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseBlackWhiteRulerBackground" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseBlackWhiteRulerBackground">
+<span class="sig-name descname"><span class="pre">setUseBlackWhiteRulerBackground</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseBlackWhiteRulerBackground" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterFill">
+<span class="sig-name descname"><span class="pre">getUsePondedWaterFill</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterFill" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterFill">
+<span class="sig-name descname"><span class="pre">setUsePondedWaterFill</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterFill" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterHatch">
+<span class="sig-name descname"><span class="pre">getUsePondedWaterHatch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterHatch" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterHatch">
+<span class="sig-name descname"><span class="pre">setUsePondedWaterHatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterHatch" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterHatchStyle">
+<span class="sig-name descname"><span class="pre">getPondedWaterHatchStyle</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html#Slide2Scripting.DisplayOptions.InterpretDisplayOptions.DisplayHatchStyle" title="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.DisplayHatchStyle"><span class="pre">DisplayHatchStyle</span></a></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterHatchStyle" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterHatchStyle">
+<span class="sig-name descname"><span class="pre">setPondedWaterHatchStyle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html#Slide2Scripting.DisplayOptions.InterpretDisplayOptions.DisplayHatchStyle" title="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.DisplayHatchStyle"><span class="pre">DisplayHatchStyle</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterHatchStyle" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterLineColour">
+<span class="sig-name descname"><span class="pre">getPondedWaterLineColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterLineColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterLineColour">
+<span class="sig-name descname"><span class="pre">setPondedWaterLineColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterLineColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterFillColour">
+<span class="sig-name descname"><span class="pre">getPondedWaterFillColour</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterFillColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterFillColour">
+<span class="sig-name descname"><span class="pre">setPondedWaterFillColour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterFillColour" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Slide2Scripting.DisplayOptions.InterpretDisplayOptions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">InterpretDisplayOptions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Slide2Scripting.GroundwaterData.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GroundwaterData</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProperties"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getProperties()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProperties"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setProperties()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowCoordinatesOfLastVertex"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowCoordinatesOfLastVertex()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowCoordinatesOfLastVertex"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowCoordinatesOfLastVertex()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusAngles"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowSegmentLengthRadiusAngles()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusAngles"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowSegmentLengthRadiusAngles()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSegmentLengthRadiusRatio"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowSegmentLengthRadiusRatio()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSegmentLengthRadiusRatio"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowSegmentLengthRadiusRatio()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowGridPointsOnSearchGrid"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowGridPointsOnSearchGrid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowGridPointsOnSearchGrid"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowGridPointsOnSearchGrid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getMaterialBoundaryColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getMaterialBoundaryColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setMaterialBoundaryColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setMaterialBoundaryColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getExternalBoundaryColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getExternalBoundaryColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setExternalBoundaryColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setExternalBoundaryColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getProfileColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getProfileColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setProfileColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setProfileColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getTensionCrackColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getTensionCrackColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setTensionCrackColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setTensionCrackColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPiezoLineColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getPiezoLineColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPiezoLineColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setPiezoLineColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWaterTableColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getWaterTableColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWaterTableColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setWaterTableColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getAnisotropicSurfaceColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getAnisotropicSurfaceColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setAnisotropicSurfaceColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setAnisotropicSurfaceColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.get3DAnisotropicSurfaceColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.get3DAnisotropicSurfaceColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.set3DAnisotropicSurfaceColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.set3DAnisotropicSurfaceColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getWeakLayerColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getWeakLayerColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setWeakLayerColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setWeakLayerColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDamageRegionColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getDamageRegionColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDamageRegionColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setDamageRegionColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getElementsColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getElementsColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setElementsColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setElementsColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowMaterialBoundaries"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowMaterialBoundaries()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowMaterialBoundaries"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowMaterialBoundaries()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowProfiles"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowProfiles()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowProfiles"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowProfiles()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowExternalBoundary"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowExternalBoundary()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowExternalBoundary"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowExternalBoundary()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowTensionCracks"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowTensionCracks()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowTensionCracks"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowTensionCracks()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterTables"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowWaterTables()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterTables"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowWaterTables()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPiezoLines"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowPiezoLines()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPiezoLines"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowPiezoLines()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWeakLayers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowWeakLayers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWeakLayers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowWeakLayers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowAnisotropicSurfaces"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowAnisotropicSurfaces()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowAnisotropicSurfaces"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowAnisotropicSurfaces()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShow3DAnisotropicSurfaces"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShow3DAnisotropicSurfaces()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShow3DAnisotropicSurfaces"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShow3DAnisotropicSurfaces()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegions"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowDamageRegions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegions"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowDamageRegions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSupportFacePlates"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowSupportFacePlates()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSupportFacePlates"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowSupportFacePlates()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoreholes"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowBoreholes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoreholes"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowBoreholes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawWeakLayerByMaterial"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getDrawWeakLayerByMaterial()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawWeakLayerByMaterial"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setDrawWeakLayerByMaterial()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryVertices"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowBoundaryVertices()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryVertices"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowBoundaryVertices()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDamageRegionsHatch"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowDamageRegionsHatch()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDamageRegionsHatch"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowDamageRegionsHatch()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLineWidth"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getLineWidth()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLineWidth"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setLineWidth()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getLoadScalingDisplayFactor"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getLoadScalingDisplayFactor()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setLoadScalingDisplayFactor"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setLoadScalingDisplayFactor()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getScaleDisplayItemsOnZoom"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getScaleDisplayItemsOnZoom()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setScaleDisplayItemsOnZoom"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setScaleDisplayItemsOnZoom()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscretizations"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowDiscretizations()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscretizations"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowDiscretizations()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getDrawMidsideNodes"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getDrawMidsideNodes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setDrawMidsideNodes"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setDrawMidsideNodes()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowNodeNumbers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowNodeNumbers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowNodeNumbers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowNodeNumbers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElementNumbers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowElementNumbers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElementNumbers"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowElementNumbers()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditions"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowBoundaryConditions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditions"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowBoundaryConditions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowBoundaryConditionValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowBoundaryConditionValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowBoundaryConditionValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowBoundaryConditionValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowElements"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowElements()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowElements"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowElements()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowPondedWater"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowPondedWater()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowPondedWater"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowPondedWater()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGrid"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowWaterPressureGrid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGrid"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowWaterPressureGrid()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowWaterPressureGridValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowWaterPressureGridValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowWaterPressureGridValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowWaterPressureGridValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthGridValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowDiscreteStrengthGridValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthGridValues"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowDiscreteStrengthGridValues()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowDiscreteStrengthSymbols"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowDiscreteStrengthSymbols()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowDiscreteStrengthSymbols"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowDiscreteStrengthSymbols()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseDiscreteStrengthTransparentTextBackground"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getUseDiscreteStrengthTransparentTextBackground()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseDiscreteStrengthTransparentTextBackground"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setUseDiscreteStrengthTransparentTextBackground()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowSoilProfile"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowSoilProfile()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowSoilProfile"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowSoilProfile()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getShowRuler"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getShowRuler()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setShowRuler"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setShowRuler()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUseBlackWhiteRulerBackground"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getUseBlackWhiteRulerBackground()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUseBlackWhiteRulerBackground"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setUseBlackWhiteRulerBackground()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterFill"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getUsePondedWaterFill()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterFill"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setUsePondedWaterFill()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getUsePondedWaterHatch"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getUsePondedWaterHatch()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setUsePondedWaterHatch"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setUsePondedWaterHatch()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterHatchStyle"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getPondedWaterHatchStyle()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterHatchStyle"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setPondedWaterHatchStyle()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterLineColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getPondedWaterLineColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterLineColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setPondedWaterLineColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.getPondedWaterFillColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.getPondedWaterFillColour()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#Slide2Scripting.DisplayOptions.ModelerDisplayOptions.ModelerDisplayOptions.setPondedWaterFillColour"><code class="docutils literal notranslate"><span class="pre">ModelerDisplayOptions.setPondedWaterFillColour()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/generatedAPIDocFiles/Slide2Scripting.DisplayOptions.ModelerDisplayOptions.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025, Rocscience Inc..
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.2.0.
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

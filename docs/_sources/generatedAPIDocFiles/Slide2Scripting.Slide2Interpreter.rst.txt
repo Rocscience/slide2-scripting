@@ -1,0 +1,7 @@
+Slide2Interpreter
+========================================
+
+.. automodule:: Slide2Scripting.Slide2Interpreter
+   :members:
+   :show-inheritance:
+   :undoc-members:

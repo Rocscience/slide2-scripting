@@ -1,0 +1,15 @@
+DisplayOptions
+======================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.DisplayOptions.InterpretDisplayOptions
+   Slide2Scripting.DisplayOptions.ModelerDisplayOptions
+
+
+.. automodule:: Slide2Scripting.DisplayOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

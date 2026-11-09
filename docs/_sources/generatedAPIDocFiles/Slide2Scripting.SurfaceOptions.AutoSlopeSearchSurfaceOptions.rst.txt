@@ -1,0 +1,7 @@
+AutoSlopeSearchSurfaceOptions
+===================================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.AutoSlopeSearchSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

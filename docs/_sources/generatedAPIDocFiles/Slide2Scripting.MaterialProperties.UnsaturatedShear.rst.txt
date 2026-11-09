@@ -1,0 +1,7 @@
+UnsaturatedShear
+==========================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.UnsaturatedShear
+   :members:
+   :show-inheritance:
+   :undoc-members:

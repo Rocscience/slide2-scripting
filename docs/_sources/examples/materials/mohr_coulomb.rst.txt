@@ -1,0 +1,14 @@
+Material Properties: Mohr-Coulomb Example
+===============================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties mohr coulomb:
+.. literalinclude:: ../../example_code/mohr_coulomb_example.py
+   :language: python
+   :caption: Code Snippet: Mohr-Coulomb Strength Properties
+
+Output
+------------------
+.. literalinclude:: ../../example_code/mohr_coulomb_example_result.txt
+   :language: python

@@ -1,0 +1,14 @@
+Project Settings: Back Analysis Tension Map Example
+===================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _project settings back analysis tension map:
+.. literalinclude:: ../../example_code/back_analysis_tension_map_example.py
+   :language: python
+   :caption: Code Snippet: Back Analysis Tension Map
+
+Output
+------------------
+.. literalinclude:: ../../example_code/back_analysis_tension_map_example_result.txt
+   :language: python

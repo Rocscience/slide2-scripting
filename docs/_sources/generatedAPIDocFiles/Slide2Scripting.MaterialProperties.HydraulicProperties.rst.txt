@@ -1,0 +1,7 @@
+HydraulicProperties
+=============================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.HydraulicProperties
+   :members:
+   :show-inheritance:
+   :undoc-members:

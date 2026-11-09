@@ -1,0 +1,7 @@
+MaterialStrength
+==========================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.MaterialStrength
+   :members:
+   :show-inheritance:
+   :undoc-members:

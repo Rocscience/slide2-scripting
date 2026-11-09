@@ -1,0 +1,7 @@
+SupportProbabilisticStatistics
+=============================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.SupportProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

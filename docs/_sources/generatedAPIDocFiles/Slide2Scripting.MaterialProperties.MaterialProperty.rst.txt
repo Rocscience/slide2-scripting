@@ -1,0 +1,7 @@
+MaterialProperty
+==========================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.MaterialProperty
+   :members:
+   :show-inheritance:
+   :undoc-members:

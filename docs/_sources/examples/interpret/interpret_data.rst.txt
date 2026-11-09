@@ -1,0 +1,14 @@
+Interpret Data Example
+======================
+
+Download the `InterpretExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/InterpretExample.slmd>`_ for this example.
+
+.. _interpret data example:
+.. literalinclude:: ../../example_code/interpret_data_example.py
+   :language: python
+   :caption: Code Snippet: Interpret Data
+
+Output
+------------------
+.. literalinclude:: ../../example_code/interpret_data_example_result.txt
+   :language: python

@@ -1,0 +1,7 @@
+TensionCrackProbabilisticStatistics
+==================================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.TensionCrackProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+ScenariosProjectSettings
+===============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.ScenariosProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

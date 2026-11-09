@@ -1,0 +1,14 @@
+Material Properties: Generalized Anisotropic Function Example
+=============================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties generalized anisotropic:
+.. literalinclude:: ../../example_code/generalized_anisotropic_strength_example.py
+   :language: python
+   :caption: Code Snippet: Generalized Anisotropic Function
+
+Output
+------------------
+.. literalinclude:: ../../example_code/generalized_anisotropic_strength_example_result.txt
+   :language: python

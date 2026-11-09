@@ -1,0 +1,14 @@
+Material Properties: No Strength Example
+========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties no strength:
+.. literalinclude:: ../../example_code/no_strength_example.py
+   :language: python
+   :caption: Code Snippet: No Strength Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/no_strength_example_result.txt
+   :language: python

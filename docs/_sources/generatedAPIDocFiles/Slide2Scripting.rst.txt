@@ -1,0 +1,38 @@
+Slide2Scripting
+=======================
+
+
+.. toctree::
+   :maxdepth: 2
+
+   Slide2Scripting.DisplayOptions
+   Slide2Scripting.GroundwaterData
+   Slide2Scripting.InterpretData
+   Slide2Scripting.InterpretQuery
+   Slide2Scripting.Liquefaction
+   Slide2Scripting.MaterialProperties
+   Slide2Scripting.ProbabilisticStatistics
+   Slide2Scripting.ProjectSettings
+   Slide2Scripting.StatisticsData
+   Slide2Scripting.SupportProperties
+   Slide2Scripting.SurfaceOptions
+   Slide2Scripting.Utilities
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.SeismicLoadSettings
+   Slide2Scripting.Slide2InterpretModel
+   Slide2Scripting.Slide2Interpreter
+   Slide2Scripting.Slide2Model
+   Slide2Scripting.Slide2Modeler
+   Slide2Scripting.SlopeLimitsSettings
+   Slide2Scripting.SupportDesigner
+   Slide2Scripting.TensionCrack
+
+
+.. automodule:: Slide2Scripting
+   :members:
+   :show-inheritance:
+   :undoc-members:

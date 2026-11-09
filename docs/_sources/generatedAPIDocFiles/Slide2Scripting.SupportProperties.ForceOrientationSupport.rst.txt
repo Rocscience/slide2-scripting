@@ -1,0 +1,7 @@
+ForceOrientationSupport
+================================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.ForceOrientationSupport
+   :members:
+   :show-inheritance:
+   :undoc-members:

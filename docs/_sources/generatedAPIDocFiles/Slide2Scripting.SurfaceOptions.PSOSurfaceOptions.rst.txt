@@ -1,0 +1,7 @@
+PSOSurfaceOptions
+=======================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.PSOSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

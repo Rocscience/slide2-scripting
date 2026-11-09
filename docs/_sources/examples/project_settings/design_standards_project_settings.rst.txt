@@ -1,0 +1,14 @@
+Project Settings: Design Standards Example
+==========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _project settings design standards:
+.. literalinclude:: ../../example_code/design_standards_project_settings_example.py
+   :language: python
+   :caption: Code Snippet: Design Standards Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/design_standards_project_settings_example_result.txt
+   :language: python

@@ -1,0 +1,7 @@
+MaterialProbabilisticStatistics
+==============================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.MaterialProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

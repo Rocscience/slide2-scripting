@@ -1,0 +1,7 @@
+Anisotropic
+=============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.Anisotropic
+   :members:
+   :show-inheritance:
+   :undoc-members:

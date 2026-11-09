@@ -1,0 +1,14 @@
+Surface Options: Particle Swarm Example
+=======================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _surface options particle swarm:
+.. literalinclude:: ../../example_code/particle_swarm_example.py
+   :language: python
+   :caption: Code Snippet: Particle Swarm Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/particle_swarm_example_result.txt
+   :language: python

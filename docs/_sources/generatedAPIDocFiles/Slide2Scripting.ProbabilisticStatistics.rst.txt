@@ -1,0 +1,25 @@
+ProbabilisticStatistics
+===============================================
+
+
+.. toctree::
+   :maxdepth: 1
+
+   Slide2Scripting.ProbabilisticStatistics.HydraulicProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.LoadProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.MaterialProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.PiezoProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.ProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.RapidDrawdownProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.SeismicProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.SupportProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.TensionCrackProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.WaterTableProbabilisticStatistics
+   Slide2Scripting.ProbabilisticStatistics.common
+   Slide2Scripting.ProbabilisticStatistics.types
+
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

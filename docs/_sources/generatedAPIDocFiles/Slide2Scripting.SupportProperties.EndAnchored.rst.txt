@@ -1,0 +1,7 @@
+EndAnchored
+====================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.EndAnchored
+   :members:
+   :show-inheritance:
+   :undoc-members:

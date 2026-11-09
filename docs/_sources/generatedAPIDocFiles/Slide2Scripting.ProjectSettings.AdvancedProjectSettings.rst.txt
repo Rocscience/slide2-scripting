@@ -1,0 +1,7 @@
+AdvancedProjectSettings
+==============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.AdvancedProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+SeismicProjectSettings
+=============================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.SeismicProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

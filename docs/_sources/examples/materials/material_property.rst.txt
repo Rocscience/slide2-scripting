@@ -1,0 +1,14 @@
+Material Properties: Basic Example
+===============================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties basic example:
+.. literalinclude:: ../../example_code/material_example.py
+   :language: python
+   :caption: Code Snippet: Manipulation of Material Properties
+
+Output
+------------------
+.. literalinclude:: ../../example_code/material_example_result.txt
+   :language: python

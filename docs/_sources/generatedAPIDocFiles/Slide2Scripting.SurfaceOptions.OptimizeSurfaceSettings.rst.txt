@@ -1,0 +1,7 @@
+OptimizeSurfaceSettings
+=============================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.OptimizeSurfaceSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:

@@ -1,0 +1,7 @@
+SeismicProbabilisticStatistics
+=============================================================================
+
+.. automodule:: Slide2Scripting.ProbabilisticStatistics.SeismicProbabilisticStatistics
+   :members:
+   :show-inheritance:
+   :undoc-members:

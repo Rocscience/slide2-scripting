@@ -1,0 +1,14 @@
+Material Properties: Hydraulic Properties Example
+=================================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties hydraulic properties:
+.. literalinclude:: ../../example_code/hydraulic_properties_example.py
+   :language: python
+   :caption: Code Snippet: Hydraulic Properties
+
+Output
+------------------
+.. literalinclude:: ../../example_code/hydraulic_properties_example_result.txt
+   :language: python

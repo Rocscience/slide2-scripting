@@ -1,0 +1,7 @@
+DrainedUndrained
+==================================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.DrainedUndrained
+   :members:
+   :show-inheritance:
+   :undoc-members:

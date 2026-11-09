@@ -1,0 +1,7 @@
+SurfaceOptions
+====================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.SurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

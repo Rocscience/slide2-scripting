@@ -1,0 +1,7 @@
+PathSearchSurfaceOptions
+==============================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.PathSearchSurfaceOptions
+   :members:
+   :show-inheritance:
+   :undoc-members:

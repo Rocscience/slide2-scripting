@@ -1,0 +1,7 @@
+Slide2Modeler
+====================================
+
+.. automodule:: Slide2Scripting.Slide2Modeler
+   :members:
+   :show-inheritance:
+   :undoc-members:

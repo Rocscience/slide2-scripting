@@ -1,0 +1,7 @@
+ModifiedSnowdenAnisotropic
+============================================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.ModifiedSnowdenAnisotropic
+   :members:
+   :show-inheritance:
+   :undoc-members:

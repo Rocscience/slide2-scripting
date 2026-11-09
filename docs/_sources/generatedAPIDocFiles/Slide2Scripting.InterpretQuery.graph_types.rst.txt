@@ -1,0 +1,7 @@
+graph\_types
+==================================================
+
+.. automodule:: Slide2Scripting.InterpretQuery.graph_types
+   :members:
+   :show-inheritance:
+   :undoc-members:

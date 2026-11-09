@@ -1,0 +1,9 @@
+Model Script Example
+======================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _Model Example:
+.. literalinclude:: ../../example_code/model_example.py
+   :language: python
+   :caption: Code Snippet: Model Manipulation

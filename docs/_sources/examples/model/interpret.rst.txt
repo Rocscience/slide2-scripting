@@ -1,0 +1,14 @@
+Interpret Script Example
+============================
+
+Download the `InterpretExample.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/InterpretExample.slmd>`_ for this example.
+
+.. _Interpret Example:
+.. literalinclude:: ../../example_code/interpret_example.py
+   :language: python
+   :caption: Code Snippet: Interpret Scripting Functionality
+
+Output
+------------------
+.. literalinclude:: ../../example_code/interpret_example_result.txt
+   :language: python

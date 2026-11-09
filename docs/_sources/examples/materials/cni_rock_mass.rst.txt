@@ -1,0 +1,14 @@
+Material Properties: CNI Rock Mass Example
+==========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _material properties cni rock mass:
+.. literalinclude:: ../../example_code/cni_rock_mass_example.py
+   :language: python
+   :caption: Code Snippet: CNI Rock Mass Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/cni_rock_mass_example_result.txt
+   :language: python

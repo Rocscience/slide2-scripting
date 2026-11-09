@@ -1,0 +1,7 @@
+SupportProperty
+========================================================
+
+.. automodule:: Slide2Scripting.SupportProperties.SupportProperty
+   :members:
+   :show-inheritance:
+   :undoc-members:

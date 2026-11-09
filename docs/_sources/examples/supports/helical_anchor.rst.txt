@@ -1,0 +1,14 @@
+Support Properties: Helical Anchor Example
+==========================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _support properties helical anchor:
+.. literalinclude:: ../../example_code/helical_anchor_example.py
+   :language: python
+   :caption: Code Snippet: Helical Anchor Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/helical_anchor_example_result.txt
+   :language: python

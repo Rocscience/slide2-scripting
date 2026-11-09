@@ -1,0 +1,7 @@
+SurfaceFilters
+====================================================
+
+.. automodule:: Slide2Scripting.SurfaceOptions.SurfaceFilters
+   :members:
+   :show-inheritance:
+   :undoc-members:

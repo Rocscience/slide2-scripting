@@ -1,0 +1,7 @@
+PowerCurve
+============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.PowerCurve
+   :members:
+   :show-inheritance:
+   :undoc-members:

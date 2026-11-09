@@ -1,0 +1,7 @@
+CniRockMass
+=============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.CniRockMass
+   :members:
+   :show-inheritance:
+   :undoc-members:

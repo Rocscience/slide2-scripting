@@ -1,0 +1,14 @@
+Slope Limits Settings Example
+=============================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _slope limits settings example:
+.. literalinclude:: ../../example_code/slope_limits_settings_example.py
+   :language: python
+   :caption: Code Snippet: Slope Limits Settings
+
+Output
+------------------
+.. literalinclude:: ../../example_code/slope_limits_settings_example_result.txt
+   :language: python

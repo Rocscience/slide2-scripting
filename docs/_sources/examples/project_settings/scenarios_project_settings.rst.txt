@@ -1,0 +1,14 @@
+Project Settings: Scenarios Example
+===================================
+
+Download the `ExampleModel.slmd <https://github.com/Rocscience/slide2-scripting/blob/main/examples/ExampleModel.slmd>`_ for this example.
+
+.. _project settings scenarios:
+.. literalinclude:: ../../example_code/scenarios_project_settings_example.py
+   :language: python
+   :caption: Code Snippet: Scenarios Example
+
+Output
+------------------
+.. literalinclude:: ../../example_code/scenarios_project_settings_example_result.txt
+   :language: python

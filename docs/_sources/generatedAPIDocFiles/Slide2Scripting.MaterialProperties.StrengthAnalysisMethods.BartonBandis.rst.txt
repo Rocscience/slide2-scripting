@@ -1,0 +1,7 @@
+BartonBandis
+==============================================================================
+
+.. automodule:: Slide2Scripting.MaterialProperties.StrengthAnalysisMethods.BartonBandis
+   :members:
+   :show-inheritance:
+   :undoc-members:

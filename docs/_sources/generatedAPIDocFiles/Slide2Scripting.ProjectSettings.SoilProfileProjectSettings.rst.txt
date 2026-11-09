@@ -1,0 +1,7 @@
+SoilProfileProjectSettings
+=================================================================
+
+.. automodule:: Slide2Scripting.ProjectSettings.SoilProfileProjectSettings
+   :members:
+   :show-inheritance:
+   :undoc-members:
