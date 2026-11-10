@@ -21,7 +21,7 @@ There are two methods to run a script, which differ in the Python environment us
 	* Requires downloading the **Slide2 Python API library**
 	* For advanced users
 
-Please refer to `Getting Started with Slide2 Python Scripting <https://www.rocscience.com/help/slide2/documentation/scripting/scripting-overview>`_
+Please refer to `Getting Started with Slide2 Python Scripting <https://www.rocscience.com/help/slide2/documentation/slide-scripting/scripting-overview>`_
 for more information.
 
 Install Slide2 Python API Library
